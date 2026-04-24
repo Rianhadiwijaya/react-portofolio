@@ -7,65 +7,51 @@ function App() {
       {/* Background glow */}
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(0,255,255,0.10),_transparent_30%),radial-gradient(circle_at_center,_rgba(0,180,255,0.08),_transparent_35%),linear-gradient(to_bottom,_#031522,_#020f1a)]" />
 
-      {/* HERO */}
+      {/* HERO - AWAL HANYA TULISAN */}
       <section
         id="home"
-        className="min-h-screen flex items-center pt-28 pb-16 sm:pt-32 sm:pb-20"
+        className="min-h-screen flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-20"
       >
-        <div className="max-w-7xl mx-auto w-full px-6 sm:px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-24">
-            {/* TEXT */}
-            <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0 animate__animated animate__fadeInUp animate__delay-3s">
-              <div className="inline-flex items-center gap-3 mb-6 border border-cyan-400/20 bg-cyan-400/5 backdrop-blur-sm px-5 py-3 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.08)]">
-                <span className="text-cyan-300 text-sm md:text-base font-medium">
-                  IT Support • Web Development • Data Science
-                </span>
-              </div>
+        <div className="max-w-5xl mx-auto w-full px-6 sm:px-8 lg:px-12 text-center">
+          <div className="animate__animated animate__fadeInUp animate__delay-1s">
+            <p className="uppercase tracking-[0.25em] text-cyan-300/80 text-sm font-semibold mb-6">
+              Portfolio
+            </p>
 
-              <h1 className="text-4xl sm:text-5xl xl:text-6xl font-extrabold leading-tight mb-6">
-                <span className="text-white">Halo, saya </span>
-                <span className="text-cyan-400 drop-shadow-[0_0_18px_rgba(34,211,238,0.75)]">
-                  Rian Hadiwijaya Anwar
-                </span>
-              </h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight mb-6">
+              <span className="text-white">Halo, saya </span>
+              <span className="text-cyan-400 drop-shadow-[0_0_18px_rgba(34,211,238,0.75)]">
+                Rian Hadiwijaya Anwar
+              </span>
+            </h1>
 
-              <p className="text-base md:text-lg leading-8 mb-8 text-white/70">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                voluptates sint, id explicabo totam qui expedita vitae nulla cum
-                repellendus corrupti tempore aliquam earum placeat perferendis
-                beatae pariatur optio doloremque?
-              </p>
+            <h2 className="text-1xl sm:text-2xl md:text-3xl font-bold text-white/90 mb-6">
+              IT Support, Web Development, Administrasi
+              <br className="hidden sm:block" /> dan Data Science.
+            </h2>
 
-              <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap">
-                <a
-                  href="https://drive.google.com/file/d/1qfHob2zSkXq1g5jMfvPDcXDfTZoT5Zpt/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-4 rounded-2xl border border-cyan-400/30 bg-cyan-500/20 text-white font-semibold hover:bg-cyan-400/20 hover:shadow-[0_0_30px_rgba(34,211,238,0.35)] transition-all duration-300"
-                >
-                  Download CV <i className="ri-download-line ri-lg ml-1"></i>
-                </a>
+            <p className="text-base md:text-lg leading-8 mb-8 text-white/70 max-w-1xl mx-auto">
+              Saya mengubah ide dan kebutuhan digital menjadi solusi yang rapi,
+              responsif, dan mudah digunakan melalui pengembangan web, analisis
+              data, serta dukungan teknologi informasi.
+            </p>
 
-                <a
-                  href="#proyek"
-                  className="px-6 py-4 rounded-2xl border border-white/10 bg-white/5 text-white font-semibold hover:border-cyan-400/30 hover:text-cyan-300 hover:bg-cyan-400/5 transition-all duration-300"
-                >
-                  Lihat Proyek <i className="ri-arrow-down-line ri-lg ml-1"></i>
-                </a>
-              </div>
-            </div>
+            <div className="flex items-center justify-center gap-3 sm:gap-4 flex-wrap">
+              <a
+                href="https://drive.google.com/file/d/1qfHob2zSkXq1g5jMfvPDcXDfTZoT5Zpt/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-4 rounded-2xl border border-cyan-400/30 bg-cyan-500/20 text-white font-semibold hover:bg-cyan-400/20 hover:shadow-[0_0_30px_rgba(34,211,238,0.35)] transition-all duration-300"
+              >
+                Download CV <i className="ri-download-line ri-lg ml-1"></i>
+              </a>
 
-            {/* IMAGE */}
-            <div className="flex justify-center lg:justify-end animate__animated animate__fadeInUp animate__delay-4s">
-              <div className="relative w-full flex justify-center lg:justify-end">
-                <div className="absolute inset-0 bg-cyan-400/10 blur-3xl rounded-full scale-110"></div>
-                <img
-                  src={DataImage.HeroImage}
-                  alt="Hero Image"
-                  className="relative w-[260px] sm:w-[320px] md:w-[360px] lg:w-[380px] xl:w-[410px] rounded-[28px] border border-cyan-400/20 shadow-[0_0_40px_rgba(34,211,238,0.15)] object-cover"
-                  loading="lazy"
-                />
-              </div>
+              <a
+                href="#tentang"
+                className="px-6 py-4 rounded-2xl border border-white/10 bg-white/5 text-white font-semibold hover:border-cyan-400/30 hover:text-cyan-300 hover:bg-cyan-400/5 transition-all duration-300"
+              >
+                Tentang Saya <i className="ri-arrow-down-line ri-lg ml-1"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -74,7 +60,6 @@ function App() {
       {/* TENTANG */}
       <section id="tentang" className="py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          {/* Heading */}
           <div
             className="text-center max-w-2xl mx-auto mb-12"
             data-aos="fade-up"
@@ -90,27 +75,24 @@ function App() {
             </p>
           </div>
 
-          {/* About Card Modern */}
           <div
-            className="relative overflow-hidden rounded-[32px] border border-cyan-400/10 bg-white/[0.03] backdrop-blur-md shadow-[0_0_30px_rgba(0,0,0,0.2)]"
+            className="relative overflow-hidden rounded-4xl border border-cyan-400/10 bg-white/3 backdrop-blur-md shadow-[0_0_30px_rgba(0,0,0,0.2)]"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="200"
             data-aos-once="true"
           >
-            {/* Glow */}
             <div className="absolute -top-20 left-10 w-56 h-56 bg-cyan-400/10 blur-[90px] rounded-full pointer-events-none"></div>
             <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-500/5 blur-[100px] rounded-full pointer-events-none"></div>
 
             <div className="relative grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-8 lg:gap-12 p-6 sm:p-8 md:p-10 lg:p-12">
-              {/* Left */}
               <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="relative mb-6">
                   <div className="absolute inset-0 scale-110 rounded-[28px] bg-cyan-400/10 blur-2xl"></div>
                   <img
                     src={DataImage.HeroImage}
                     alt="Rian Hadiwijaya Anwar"
-                    className="relative w-[220px] sm:w-[240px] md:w-[260px] rounded-[28px] object-cover border border-cyan-400/20 shadow-[0_0_35px_rgba(34,211,238,0.12)]"
+                    className="relative w-55 sm:w-60 md:w-65 rounded-[28px] object-cover border border-cyan-400/20 shadow-[0_0_35px_rgba(34,211,238,0.12)]"
                     loading="lazy"
                   />
                 </div>
@@ -130,7 +112,6 @@ function App() {
                 </p>
               </div>
 
-              {/* Right */}
               <div className="flex flex-col justify-center">
                 <div className="grid sm:grid-cols-2 gap-4 mb-6">
                   <div className="rounded-2xl border border-cyan-400/10 bg-[#071c2f]/60 p-4">
@@ -188,74 +169,144 @@ function App() {
                 </div>
 
                 <div className="flex flex-wrap gap-3">
-                  <span className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm">
-                    HTML
-                  </span>
-                  <span className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm">
-                    CSS
-                  </span>
-                  <span className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm">
-                    Javascript
-                  </span>
-                  <span className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm">
-                    React JS
-                  </span>
-                  <span className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm">
-                    Tailwind CSS
-                  </span>
-                  <span className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm">
-                    Python
-                  </span>
+                  {[
+                    "HTML",
+                    "CSS",
+                    "Javascript",
+                    "React JS",
+                    "Tailwind CSS",
+                    "Python",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm"
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
 
-          {/* TOOLS */}
+          {/* KOLOM PENGALAMAN BARU */}
           <div className="mt-20 sm:mt-24">
-            <div className="max-w-3xl">
-              <h2
-                className="text-3xl sm:text-4xl font-bold mb-4 text-white"
+            <div
+              className="text-center max-w-2xl mx-auto mb-12"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <p className="text-cyan-300 text-sm font-semibold mb-3">Karier</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white">
+                Pengalaman
+              </h2>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-5">
+              <div
+                className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-once="true"
               >
-                Tools yang dipakai
-              </h2>
+                <div className="absolute left-0 top-0 h-full w-1 bg-cyan-400/70"></div>
 
-              <p
-                className="text-base leading-8 text-white/60"
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
+                  <h3 className="text-lg font-bold text-white">
+                    IT Support — PT Baoshuo Taman Industry Invesment Group
+                  </h3>
+                  <span className="w-fit rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-300">
+                    Des 2025 - Saat Ini
+                  </span>
+                </div>
+
+                <ul className="space-y-3 text-white/65 leading-7 list-disc pl-5">
+                  <li>
+                    instalasi, konfigurasi, dan maintenance hardware & software.
+                  </li>
+                  <li>Pengelolaan dan pendataan aset IT secara terstruktur.</li>
+                  <li>
+                    Troubleshooting jaringan, sistem, dan perangkat kerja.
+                  </li>
+                  <li>
+                    Pengembangan website inventory IT untuk monitoring dan
+                    manajemen aset.
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="150"
+                data-aos-once="true"
+              >
+                <div className="absolute left-0 top-0 h-full w-1 bg-cyan-400/70"></div>
+
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
+                  <h3 className="text-lg font-bold text-white">
+                    Asistant Administrasi — Kementerian Keuangan
+                  </h3>
+                  <span className="w-fit rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
+                    Apr 2025 - Jun 2025
+                  </span>
+                </div>
+
+                <ul className="space-y-3 text-white/65 leading-7 list-disc pl-5">
+                  <li>
+                    Layanan administrasi perpajakan (SPT Tahunan, EFIN, NPWP).
+                  </li>
+                  <li>
+                    Dukungan pengawasan (pencatatan STP & distribusi surat)
+                  </li>
+                  <li>
+                    Menjaga akurasi data, keamanan, dan kepatuhan prosedur
+                  </li>
+                  <li>Mendukung peningkatan efektivitas layanan publik.</li>
+                  <li>Pengelolaan arsip digital dan input data wajib pajak.</li>
+                </ul>
+              </div>
+
+              <div
+                className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="300"
                 data-aos-once="true"
               >
-                Berikut ini beberapa tools yang biasa saya pakai untuk pembuatan
-                website ataupun Data Science.
-              </p>
-            </div>
+                <div className="absolute left-0 top-0 h-full w-1 bg-cyan-400/70"></div>
 
-            <div className="mt-12 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
-              {listTools.map((tool) => (
-                <div
-                  className="flex items-center gap-4 p-4 border border-cyan-400/10 rounded-2xl bg-white/[0.03] backdrop-blur-sm hover:bg-cyan-400/5 hover:border-cyan-400/20 hover:shadow-[0_0_25px_rgba(34,211,238,0.08)] transition-all duration-300 group"
-                  key={tool.id}
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay={tool.dad}
-                  data-aos-once="true"
-                >
-                  <img
-                    src={tool.gambar}
-                    alt="Tools Image"
-                    className="w-14 h-14 object-contain bg-[#0b1e2c] p-2 rounded-xl border border-cyan-400/10 group-hover:scale-105 transition-all duration-300"
-                  />
-                  <div>
-                    <h4 className="font-bold text-white">{tool.nama}</h4>
-                    <p className="text-white/50">{tool.ket}</p>
-                  </div>
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
+                  <h3 className="text-lg font-bold text-white">
+                    Data Science & AI MSIB — Startup Campus
+                  </h3>
+                  <span className="w-fit rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
+                    Apr 2024 - Jun 2024
+                  </span>
                 </div>
-              ))}
+
+                <ul className="space-y-3 text-white/65 leading-7 list-disc pl-5">
+                  <li>
+                    Menguasai SQL, Python, dan statistical thinking untuk
+                    aplikasi bisnis.
+                  </li>
+                  <li>
+                    Terampil dalam data preprocessing, feature engineering, dan
+                    exploratory data analysis (EDA) sebelum pemodelan.
+                  </li>
+                  <li>
+                    Mengimplementasikan machine learning untuk menghasilkan
+                    insight berbasis data serta data visualization dengan BI
+                    tools interaktif.
+                  </li>
+                  <li>
+                    Memahami konsep Artificial Intelligence dan aplikasinya di
+                    berbagai industri.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -271,7 +322,7 @@ function App() {
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              Pengalaman
+              Proyek Saya
             </h1>
 
             <p
@@ -289,7 +340,7 @@ function App() {
             {listProyek.map((proyek) => (
               <div
                 key={proyek.id}
-                className="h-full flex flex-col p-5 bg-white/[0.03] border border-cyan-400/10 rounded-3xl backdrop-blur-sm hover:border-cyan-400/20 hover:bg-cyan-400/[0.03] hover:shadow-[0_0_25px_rgba(34,211,238,0.08)] transition-all duration-300"
+                className="h-full flex flex-col p-5 bg-white/3 border border-cyan-400/10 rounded-3xl backdrop-blur-sm hover:border-cyan-400/20 hover:bg-cyan-400/3 hover:shadow-[0_0_25px_rgba(34,211,238,0.08)] transition-all duration-300"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay={proyek.dad}
@@ -337,6 +388,56 @@ function App() {
         </div>
       </section>
 
+      {/* TOOLS */}
+      <section id="tools" className="py-20 sm:py-24">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="max-w-3xl">
+            <h2
+              className="text-3xl sm:text-4xl font-bold mb-4 text-white"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Tools Yang Saya Pakai
+            </h2>
+
+            <p
+              className="text-base leading-8 text-white/60"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              data-aos-once="true"
+            >
+              Berikut ini beberapa tools yang biasa saya pakai untuk pembuatan
+              website ataupun Data Science.
+            </p>
+          </div>
+
+          <div className="mt-12 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+            {listTools.map((tool) => (
+              <div
+                className="flex items-center gap-4 p-4 border border-cyan-400/10 rounded-2xl bg-white/3 backdrop-blur-sm hover:bg-cyan-400/5 hover:border-cyan-400/20 hover:shadow-[0_0_25px_rgba(34,211,238,0.08)] transition-all duration-300 group"
+                key={tool.id}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay={tool.dad}
+                data-aos-once="true"
+              >
+                <img
+                  src={tool.gambar}
+                  alt="Tools Image"
+                  className="w-14 h-14 object-contain bg-[#0b1e2c] p-2 rounded-xl border border-cyan-400/10 group-hover:scale-105 transition-all duration-300"
+                />
+                <div>
+                  <h4 className="font-bold text-white">{tool.nama}</h4>
+                  <p className="text-white/50">{tool.ket}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* KONTAK */}
       <section id="kontak" className="py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -364,7 +465,7 @@ function App() {
           <form
             action="https://formsubmit.co/rianbcc89@gmail.com"
             method="POST"
-            className="bg-white/[0.03] border border-cyan-400/10 backdrop-blur-md p-6 md:p-10 w-full max-w-2xl mx-auto rounded-3xl shadow-[0_0_30px_rgba(0,0,0,0.2)]"
+            className="bg-white/3 border border-cyan-400/10 backdrop-blur-md p-6 md:p-10 w-full max-w-2xl mx-auto rounded-3xl shadow-[0_0_30px_rgba(0,0,0,0.2)]"
             autoComplete="off"
             data-aos="fade-up"
             data-aos-duration="1000"

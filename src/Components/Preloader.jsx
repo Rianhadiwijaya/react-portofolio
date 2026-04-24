@@ -4,27 +4,30 @@ const Preloader = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
     return () => clearTimeout(timer);
   }, []);
 
   if (!loading) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden bg-[#031522]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden bg-[#031522]">
       {/* Background glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,255,255,0.10),_transparent_30%),radial-gradient(circle_at_center,_rgba(0,180,255,0.08),_transparent_35%),linear-gradient(to_bottom,_#031522,_#020f1a)]" />
 
       {/* Blur light */}
-      <div className="absolute w-[300px] h-[300px] rounded-full bg-cyan-400/10 blur-3xl animate-pulse" />
+      <div className="absolute w-75 h-75 rounded-full bg-cyan-400/10 blur-3xl animate-pulse" />
 
       {/* Content */}
       <div className="relative flex flex-col items-center justify-center">
         {/* Spinner outer glow */}
         <div className="relative flex items-center justify-center">
-          <div className="absolute w-28 h-28 rounded-full bg-cyan-400/10 blur-2xl animate-pulse"></div>
+          <div className="absolute w-28 h-28 rounded-full bg-cyan-400/10 blur-2xl animate-pulse" />
 
-          <div className="w-24 h-24 rounded-full border border-cyan-400/20 flex items-center justify-center backdrop-blur-sm bg-white/[0.02] shadow-[0_0_30px_rgba(34,211,238,0.15)]">
+          <div className="w-24 h-24 rounded-full border border-cyan-400/20 flex items-center justify-center backdrop-blur-sm bg-white/2 shadow-[0_0_30px_rgba(34,211,238,0.15)]">
             <svg
               aria-hidden="true"
               className="w-12 h-12 animate-spin text-cyan-200/20 fill-cyan-400"
@@ -52,6 +55,7 @@ const Preloader = () => {
               Portofolio
             </span>
           </h1>
+
           <p className="mt-3 text-sm md:text-base text-white/60">
             Tunggu sebentar, halaman sedang disiapkan...
           </p>

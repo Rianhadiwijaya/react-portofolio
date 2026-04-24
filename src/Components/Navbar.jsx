@@ -46,7 +46,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#tentang"
-                className="relative text-cyan-400 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-full after:bg-cyan-400 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]"
+                className="relative text-cyan-400 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-full after:bg-cyan-400 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]"
               >
                 Tentang
               </a>
@@ -55,7 +55,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#tools"
-                className="relative text-white/85 hover:text-cyan-400 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-cyan-400 after:shadow-[0_0_10px_rgba(34,211,238,0.9)] after:transition-all after:duration-300 hover:after:w-full"
+                className="relative text-white/85 hover:text-cyan-400 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-0 after:bg-cyan-400 after:shadow-[0_0_10px_rgba(34,211,238,0.9)] after:transition-all after:duration-300 hover:after:w-full"
               >
                 Tools
               </a>
@@ -64,7 +64,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#portfolio"
-                className="relative text-white/85 hover:text-cyan-400 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-cyan-400 after:shadow-[0_0_10px_rgba(34,211,238,0.9)] after:transition-all after:duration-300 hover:after:w-full"
+                className="relative text-white/85 hover:text-cyan-400 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-0 after:bg-cyan-400 after:shadow-[0_0_10px_rgba(34,211,238,0.9)] after:transition-all after:duration-300 hover:after:w-full"
               >
                 Portfolio
               </a>
@@ -73,7 +73,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#pendidikan"
-                className="relative text-white/85 hover:text-cyan-400 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-cyan-400 after:shadow-[0_0_10px_rgba(34,211,238,0.9)] after:transition-all after:duration-300 hover:after:w-full"
+                className="relative text-white/85 hover:text-cyan-400 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-0 after:bg-cyan-400 after:shadow-[0_0_10px_rgba(34,211,238,0.9)] after:transition-all after:duration-300 hover:after:w-full"
               >
                 Pendidikan
               </a>
@@ -82,7 +82,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#kontak"
-                className="relative text-white/85 hover:text-cyan-400 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-cyan-400 after:shadow-[0_0_10px_rgba(34,211,238,0.9)] after:transition-all after:duration-300 hover:after:w-full"
+                className="relative text-white/85 hover:text-cyan-400 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-0 after:bg-cyan-400 after:shadow-[0_0_10px_rgba(34,211,238,0.9)] after:transition-all after:duration-300 hover:after:w-full"
               >
                 Kontak
               </a>

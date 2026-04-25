@@ -30,11 +30,11 @@ function App() {
               <br className="hidden sm:block" /> dan Data Science.
             </h2>
 
-            <p className="text-base md:text-lg leading-8 mb-8 text-white/70 max-w-1xl mx-auto">
+            {/* <p className="text-base md:text-lg leading-8 mb-8 text-white/70 max-w-1xl mx-auto">
               Saya mengubah ide dan kebutuhan digital menjadi solusi yang rapi,
               responsif, dan mudah digunakan melalui pengembangan web, analisis
               data, serta dukungan teknologi informasi.
-            </p>
+            </p> */}
 
             <div className="flex items-center justify-center gap-3 sm:gap-4 flex-wrap">
               <a

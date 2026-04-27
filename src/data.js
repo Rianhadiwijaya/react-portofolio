@@ -98,9 +98,9 @@ export const listTools = [
   },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.jpg";
-import Proyek2 from "/assets/proyek/msib2.png";
-import Proyek3 from "/assets/proyek/proyek3.webp";
+import Proyek1 from "/assets/proyek/webgudang_.png";
+import Proyek2 from "/assets/proyek/msib_.png";
+import Proyek3 from "/assets/proyek/analisis_.png";
 import Proyek4 from "/assets/proyek/proyek4.webp";
 import Proyek5 from "/assets/proyek/proyek5.webp";
 import Proyek6 from "/assets/proyek/proyek6.webp";
@@ -109,25 +109,33 @@ export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Magang Bersertifikat Dan Studi Independen",
-    desk: "Studi Independen di Startup Campus bidang Data Science & AI, mempelajari analisis data, machine learning, dan penerapan AI pada studi kasus industri.",
-    tools: ["Data Science", "Artificial Intelligence"],
+    nama: "Web Inventory Gudang",
+    desk: "Mengembangkan website inventory gudang untuk pencatatan dan monitoring stok barang masuk serta keluar secara digital.",
+    tools: [
+      "PHP",
+      "MySql",
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "Boostrap",
+      "Visual Studio Code",
+    ],
     dad: "200",
   },
   {
     id: 2,
     gambar: Proyek2,
-    nama: "Company Profile",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS", "Swiper", "Lightbox Gallery"],
+    nama: "Data Science & AI",
+    desk: "Mengembangkan dashboard dan forecasting penjualan untuk menghasilkan insight bisnis.",
+    tools: ["Python", "Google Colab", "Loker Studio"],
     dad: "300",
   },
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Web Pernikahan 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "TailwindCSS", "AOS"],
+    nama: "Analisis Sentimen",
+    desk: "Klasifikasi sentimen komentar TikTok terhadap pemain Timnas Indonesia menggunakan metode Naive Bayes.",
+    tools: ["Google Colab", "Python", "Apify", "TikTok"],
     dad: "400",
   },
   {

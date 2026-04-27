@@ -328,7 +328,7 @@ function App() {
                   </h3>
 
                   <span className="inline-block rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-300 mb-4">
-                    SMA
+                    Matematika Dan Ilmu Pengetahuan Alam
                   </span>
 
                   <p className="text-white/65 leading-7">

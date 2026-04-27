@@ -2,12 +2,28 @@ import DataImage from "./data";
 import { listTools, listProyek } from "./data";
 
 function App() {
+  const hardSkills = [
+    "Web Development",
+    "Data Science",
+    "Administrasi",
+    "Pengelolaan Arsip",
+    "Pengelolaan Data",
+  ];
+
+  const softSkills = [
+    "Problem Solving",
+    "Beradaptasi",
+    "Kepemimpinan",
+    "Komunikasi",
+    "Kolaborasi",
+  ];
+
   return (
     <div className="min-h-screen bg-[#031522] text-white overflow-x-hidden">
       {/* Background glow */}
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(0,255,255,0.10),_transparent_30%),radial-gradient(circle_at_center,_rgba(0,180,255,0.08),_transparent_35%),linear-gradient(to_bottom,_#031522,_#020f1a)]" />
 
-      {/* HERO - AWAL HANYA TULISAN */}
+      {/* HERO */}
       <section
         id="home"
         className="min-h-screen flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-20"
@@ -29,12 +45,6 @@ function App() {
               IT Support, Web Development, Administrasi
               <br className="hidden sm:block" /> dan Data Science.
             </h2>
-
-            {/* <p className="text-base md:text-lg leading-8 mb-8 text-white/70 max-w-1xl mx-auto">
-              Saya mengubah ide dan kebutuhan digital menjadi solusi yang rapi,
-              responsif, dan mudah digunakan melalui pengembangan web, analisis
-              data, serta dukungan teknologi informasi.
-            </p> */}
 
             <div className="flex items-center justify-center gap-3 sm:gap-4 flex-wrap">
               <a
@@ -189,7 +199,7 @@ function App() {
             </div>
           </div>
 
-          {/* KOLOM PENGALAMAN BARU */}
+          {/* PENGALAMAN */}
           <div className="mt-20 sm:mt-24">
             <div
               className="text-center max-w-2xl mx-auto mb-12"
@@ -204,14 +214,8 @@ function App() {
             </div>
 
             <div className="max-w-4xl mx-auto space-y-5">
-              <div
-                className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-once="true"
-              >
+              <div className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]">
                 <div className="absolute left-0 top-0 h-full w-1 bg-cyan-400/70"></div>
-
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
                   <h3 className="text-lg font-bold text-white">
                     IT Support — PT Baoshuo Taman Industry Invesment Group
@@ -223,7 +227,7 @@ function App() {
 
                 <ul className="space-y-3 text-white/65 leading-7 list-disc pl-5">
                   <li>
-                    instalasi, konfigurasi, dan maintenance hardware & software.
+                    Instalasi, konfigurasi, dan maintenance hardware & software.
                   </li>
                   <li>Pengelolaan dan pendataan aset IT secara terstruktur.</li>
                   <li>
@@ -236,15 +240,8 @@ function App() {
                 </ul>
               </div>
 
-              <div
-                className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-                data-aos-once="true"
-              >
+              <div className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]">
                 <div className="absolute left-0 top-0 h-full w-1 bg-cyan-400/70"></div>
-
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
                   <h3 className="text-lg font-bold text-white">
                     Asistant Administrasi — Kementerian Keuangan
@@ -256,28 +253,21 @@ function App() {
 
                 <ul className="space-y-3 text-white/65 leading-7 list-disc pl-5">
                   <li>
-                    Layanan administrasi perpajakan (SPT Tahunan, EFIN, NPWP).
+                    Layanan administrasi perpajakan SPT Tahunan, EFIN, NPWP.
                   </li>
                   <li>
-                    Dukungan pengawasan (pencatatan STP & distribusi surat)
+                    Dukungan pengawasan pencatatan STP dan distribusi surat.
                   </li>
                   <li>
-                    Menjaga akurasi data, keamanan, dan kepatuhan prosedur
+                    Menjaga akurasi data, keamanan, dan kepatuhan prosedur.
                   </li>
                   <li>Mendukung peningkatan efektivitas layanan publik.</li>
                   <li>Pengelolaan arsip digital dan input data wajib pajak.</li>
                 </ul>
               </div>
 
-              <div
-                className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="300"
-                data-aos-once="true"
-              >
+              <div className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]">
                 <div className="absolute left-0 top-0 h-full w-1 bg-cyan-400/70"></div>
-
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
                   <h3 className="text-lg font-bold text-white">
                     Data Science & AI MSIB — Startup Campus
@@ -294,18 +284,85 @@ function App() {
                   </li>
                   <li>
                     Terampil dalam data preprocessing, feature engineering, dan
-                    exploratory data analysis (EDA) sebelum pemodelan.
+                    EDA.
                   </li>
                   <li>
-                    Mengimplementasikan machine learning untuk menghasilkan
-                    insight berbasis data serta data visualization dengan BI
-                    tools interaktif.
+                    Mengimplementasikan machine learning dan data visualization.
                   </li>
                   <li>
                     Memahami konsep Artificial Intelligence dan aplikasinya di
                     berbagai industri.
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* PENDIDIKAN */}
+          <div className="mt-20 sm:mt-24">
+            <div
+              className="text-center max-w-2xl mx-auto mb-12"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <p className="text-cyan-300 text-sm font-semibold mb-3">
+                Pendidikan
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white">
+                Riwayat Pendidikan
+              </h2>
+            </div>
+
+            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/20 hover:bg-cyan-400/5 transition-all duration-300">
+                <div className="absolute -top-16 right-0 w-44 h-44 bg-cyan-400/10 blur-[80px] rounded-full"></div>
+
+                <div className="relative">
+                  <div className="w-12 h-12 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                    <i className="ri-school-line ri-xl"></i>
+                  </div>
+
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    SMA NEGERI 2 SIDRAP
+                  </h3>
+
+                  <span className="inline-block rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-300 mb-4">
+                    SMA
+                  </span>
+
+                  <p className="text-white/65 leading-7">
+                    Menempuh pendidikan tingkat Sekolah Menengah Atas dengan
+                    membangun dasar pengetahuan, kedisiplinan, dan kemampuan
+                    belajar yang menjadi fondasi untuk melanjutkan pendidikan ke
+                    jenjang kuliah.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/20 hover:bg-cyan-400/5 transition-all duration-300">
+                <div className="absolute -top-16 right-0 w-44 h-44 bg-cyan-400/10 blur-[80px] rounded-full"></div>
+
+                <div className="relative">
+                  <div className="w-12 h-12 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                    <i className="ri-graduation-cap-line ri-xl"></i>
+                  </div>
+
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    UNIVERSITAS BOSOWA
+                  </h3>
+
+                  <span className="inline-block rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-300 mb-4">
+                    S1 Teknologi Informasi
+                  </span>
+
+                  <p className="text-white/65 leading-7">
+                    Menempuh pendidikan S1 Teknologi Informasi dengan fokus pada
+                    pengembangan web, pemrograman, analisis data, serta
+                    pemanfaatan teknologi informasi untuk menyelesaikan
+                    kebutuhan digital.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -316,22 +373,9 @@ function App() {
       <section id="proyek" className="py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto">
-            <h1
-              className="text-3xl sm:text-4xl font-bold mb-3"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            >
-              Proyek Saya
-            </h1>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-3">Proyek Saya</h1>
 
-            <p
-              className="text-base leading-8 text-white/55"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
-              data-aos-once="true"
-            >
+            <p className="text-base leading-8 text-white/55">
               Berikut ini beberapa proyek yang telah saya buat.
             </p>
           </div>
@@ -341,10 +385,6 @@ function App() {
               <div
                 key={proyek.id}
                 className="h-full flex flex-col p-5 bg-white/3 border border-cyan-400/10 rounded-3xl backdrop-blur-sm hover:border-cyan-400/20 hover:bg-cyan-400/3 hover:shadow-[0_0_25px_rgba(34,211,238,0.08)] transition-all duration-300"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay={proyek.dad}
-                data-aos-once="true"
               >
                 <img
                   src={proyek.gambar}
@@ -392,22 +432,11 @@ function App() {
       <section id="tools" className="py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="max-w-3xl">
-            <h2
-              className="text-3xl sm:text-4xl font-bold mb-4 text-white"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            >
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
               Tools Yang Saya Pakai
             </h2>
 
-            <p
-              className="text-base leading-8 text-white/60"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
-              data-aos-once="true"
-            >
+            <p className="text-base leading-8 text-white/60">
               Berikut ini beberapa tools yang biasa saya pakai untuk pembuatan
               website ataupun Data Science.
             </p>
@@ -418,10 +447,6 @@ function App() {
               <div
                 className="flex items-center gap-4 p-4 border border-cyan-400/10 rounded-2xl bg-white/3 backdrop-blur-sm hover:bg-cyan-400/5 hover:border-cyan-400/20 hover:shadow-[0_0_25px_rgba(34,211,238,0.08)] transition-all duration-300 group"
                 key={tool.id}
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay={tool.dad}
-                data-aos-once="true"
               >
                 <img
                   src={tool.gambar}
@@ -438,26 +463,110 @@ function App() {
         </div>
       </section>
 
+      {/* HARDSKILL & SOFTSKILL */}
+      <section id="skill" className="py-20 sm:py-24">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div
+            className="text-center max-w-2xl mx-auto mb-12"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <p className="text-cyan-300 text-sm font-semibold mb-3">
+              Kemampuan
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
+              Hard Skill & Soft Skill
+            </h2>
+            <p className="text-base leading-8 text-white/60">
+              Kumpulan kemampuan teknis dan kemampuan interpersonal yang saya
+              gunakan untuk mendukung pekerjaan, proyek, serta kolaborasi tim.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div
+              className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/20 hover:bg-cyan-400/5 transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <div className="absolute -top-20 right-0 w-56 h-56 bg-cyan-400/10 blur-[90px] rounded-full pointer-events-none"></div>
+
+              <div className="relative">
+                <div className="w-14 h-14 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                  <i className="ri-code-s-slash-line ri-2x"></i>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-3">
+                  Hard Skill
+                </h3>
+
+                <p className="text-white/60 leading-7 mb-6">
+                  Kemampuan teknis yang saya kuasai dalam bidang pengembangan
+                  web, data, administrasi, dan pengelolaan informasi.
+                </p>
+
+                <div className="flex flex-wrap gap-3">
+                  {hardSkills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm font-medium hover:bg-cyan-400/10 transition-all duration-300"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/20 hover:bg-cyan-400/5 transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="150"
+              data-aos-once="true"
+            >
+              <div className="absolute -top-20 right-0 w-56 h-56 bg-cyan-400/10 blur-[90px] rounded-full pointer-events-none"></div>
+
+              <div className="relative">
+                <div className="w-14 h-14 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                  <i className="ri-team-line ri-2x"></i>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-3">
+                  Soft Skill
+                </h3>
+
+                <p className="text-white/60 leading-7 mb-6">
+                  Kemampuan interpersonal yang membantu saya bekerja secara
+                  efektif, beradaptasi, dan berkolaborasi dalam lingkungan
+                  kerja.
+                </p>
+
+                <div className="flex flex-wrap gap-3">
+                  {softSkills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm font-medium hover:bg-cyan-400/10 transition-all duration-300"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* KONTAK */}
       <section id="kontak" className="py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto">
-            <h1
-              className="text-3xl sm:text-4xl mb-3 font-bold"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            >
-              Kontak
-            </h1>
+            <h1 className="text-3xl sm:text-4xl mb-3 font-bold">Kontak</h1>
 
-            <p
-              className="text-base leading-8 mb-10 text-white/55"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
-              data-aos-once="true"
-            >
+            <p className="text-base leading-8 mb-10 text-white/55">
               Mari terhubung dengan saya
             </p>
           </div>
@@ -467,10 +576,6 @@ function App() {
             method="POST"
             className="bg-white/3 border border-cyan-400/10 backdrop-blur-md p-6 md:p-10 w-full max-w-2xl mx-auto rounded-3xl shadow-[0_0_30px_rgba(0,0,0,0.2)]"
             autoComplete="off"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-            data-aos-once="true"
           >
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-2">

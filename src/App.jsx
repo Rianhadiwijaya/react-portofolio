@@ -200,7 +200,7 @@ function App() {
           </div>
 
           {/* PENGALAMAN */}
-          <div className="mt-20 sm:mt-24">
+          <div id="pengalaman" className="mt-20 sm:mt-24">
             <div
               className="text-center max-w-2xl mx-auto mb-12"
               data-aos="fade-up"
@@ -299,7 +299,7 @@ function App() {
           </div>
 
           {/* PENDIDIKAN */}
-          <div className="mt-20 sm:mt-24">
+          <div id="pendidikan" className="mt-20 sm:mt-24">
             <div
               className="text-center max-w-2xl mx-auto mb-12"
               data-aos="fade-up"
@@ -561,70 +561,93 @@ function App() {
       </section>
 
       {/* KONTAK */}
-      <section id="kontak" className="py-20 sm:py-24">
+      <section id="kontak" className="scroll-mt-24 py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center max-w-2xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl mb-3 font-bold">Kontak</h1>
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <p className="text-cyan-300 text-sm font-semibold mb-3">Kontak</p>
+            <h1 className="text-3xl sm:text-4xl mb-3 font-bold">
+              Hubungi Saya
+            </h1>
 
-            <p className="text-base leading-8 mb-10 text-white/55">
-              Mari terhubung dengan saya
+            <p className="text-base leading-8 text-white/55">
+              Silakan hubungi saya melalui WhatsApp, Email, atau lihat lokasi
+              saya.
             </p>
           </div>
 
-          <form
-            action="https://formsubmit.co/rianbcc89@gmail.com"
-            method="POST"
-            className="bg-white/3 border border-cyan-400/10 backdrop-blur-md p-6 md:p-10 w-full max-w-2xl mx-auto rounded-3xl shadow-[0_0_30px_rgba(0,0,0,0.2)]"
-            autoComplete="off"
-          >
-            <div className="flex flex-col gap-6">
-              <div className="flex flex-col gap-2">
-                <label className="font-semibold text-white">Nama Lengkap</label>
-                <input
-                  type="text"
-                  name="nama"
-                  placeholder="Masukkan Nama..."
-                  className="border border-cyan-400/15 bg-[#071c2f]/70 text-white placeholder:text-white/30 p-3 rounded-xl outline-none focus:border-cyan-400/40 focus:shadow-[0_0_15px_rgba(34,211,238,0.15)]"
-                  required
-                />
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/6285240600870"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 text-center shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/30 hover:bg-cyan-400/5 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-300"
+            >
+              <div className="absolute -top-16 right-0 w-44 h-44 bg-cyan-400/10 blur-[80px] rounded-full"></div>
 
-              <div className="flex flex-col gap-2">
-                <label className="font-semibold text-white">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Masukkan Email..."
-                  className="border border-cyan-400/15 bg-[#071c2f]/70 text-white placeholder:text-white/30 p-3 rounded-xl outline-none focus:border-cyan-400/40 focus:shadow-[0_0_15px_rgba(34,211,238,0.15)]"
-                  required
-                />
-              </div>
+              <div className="relative">
+                <div className="w-16 h-16 mx-auto rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                  <i className="ri-whatsapp-line ri-2x"></i>
+                </div>
 
-              <div className="flex flex-col gap-2">
-                <label htmlFor="pesan" className="font-semibold text-white">
-                  Pesan
-                </label>
-                <textarea
-                  name="pesan"
-                  id="pesan"
-                  cols="45"
-                  rows="7"
-                  placeholder="Pesan..."
-                  className="border border-cyan-400/15 bg-[#071c2f]/70 text-white placeholder:text-white/30 p-3 rounded-xl outline-none focus:border-cyan-400/40 focus:shadow-[0_0_15px_rgba(34,211,238,0.15)]"
-                  required
-                ></textarea>
-              </div>
+                <h3 className="text-xl font-bold text-white mb-2">WhatsApp</h3>
 
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="bg-cyan-500/20 p-3 rounded-2xl w-full cursor-pointer block border border-cyan-400/20 text-white font-semibold hover:bg-cyan-400/20 hover:shadow-[0_0_25px_rgba(34,211,238,0.2)] transition-all duration-300"
-                >
-                  Kirim Pesan
-                </button>
+                <p className="text-white/60 mb-4">
+                  Hubungi saya langsung melalui WhatsApp.
+                </p>
+
+                <p className="text-cyan-300 font-semibold">+62 852-4060-0870</p>
               </div>
-            </div>
-          </form>
+            </a>
+
+            {/* Email */}
+            <a
+              href="mailto:rianbcc89@gmail.com"
+              className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 text-center shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/30 hover:bg-cyan-400/5 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-300"
+            >
+              <div className="absolute -top-16 right-0 w-44 h-44 bg-cyan-400/10 blur-[80px] rounded-full"></div>
+
+              <div className="relative">
+                <div className="w-16 h-16 mx-auto rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                  <i className="ri-mail-line ri-2x"></i>
+                </div>
+
+                <h3 className="text-xl font-bold text-white mb-2">Email</h3>
+
+                <p className="text-white/60 mb-4">
+                  Kirim pesan atau kerja sama melalui email.
+                </p>
+
+                <p className="text-cyan-300 font-semibold break-all">
+                  rianbcc89@gmail.com
+                </p>
+              </div>
+            </a>
+
+            {/* Lokasi */}
+            <a
+              href="https://maps.app.goo.gl/z7S6nYo2NWxLVXoW6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 text-center shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/30 hover:bg-cyan-400/5 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-300"
+            >
+              <div className="absolute -top-16 right-0 w-44 h-44 bg-cyan-400/10 blur-[80px] rounded-full"></div>
+
+              <div className="relative">
+                <div className="w-16 h-16 mx-auto rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                  <i className="ri-map-pin-line ri-2x"></i>
+                </div>
+
+                <h3 className="text-xl font-bold text-white mb-2">Lokasi</h3>
+
+                <p className="text-white/60 mb-4">Lokasi saya saat ini.</p>
+
+                <p className="text-cyan-300 font-semibold">
+                  Morowali, Sulawesi Tengah, Indonesia
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
     </div>

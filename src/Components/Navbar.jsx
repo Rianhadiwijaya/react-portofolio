@@ -6,13 +6,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menus = [
-    { name: "Tentang", href: "tentang" },
-    { name: "Pengalaman", href: "pengalaman" },
-    { name: "Pendidikan", href: "pendidikan" },
-    { name: "Proyek", href: "proyek" },
+    { name: "About", href: "tentang" },
+    { name: "Experience", href: "pengalaman" },
+    { name: "Education", href: "pendidikan" },
+    { name: "Project", href: "proyek" },
     { name: "Tools", href: "tools" },
     { name: "Skill", href: "skill" },
-    { name: "Kontak", href: "kontak" },
+    { name: "Contact", href: "kontak" },
   ];
 
   useEffect(() => {

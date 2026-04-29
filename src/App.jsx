@@ -60,7 +60,7 @@ function App() {
                 href="#tentang"
                 className="px-6 py-4 rounded-2xl border border-white/10 bg-white/5 text-white font-semibold hover:border-cyan-400/30 hover:text-cyan-300 hover:bg-cyan-400/5 transition-all duration-300"
               >
-                Tentang Saya <i className="ri-arrow-down-line ri-lg ml-1"></i>
+                About Me <i className="ri-arrow-down-line ri-lg ml-1"></i>
               </a>
             </div>
           </div>
@@ -77,11 +77,11 @@ function App() {
             data-aos-once="true"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
-              Tentang Saya
+              About Me
             </h2>
             <p className="text-base leading-8 text-white/60">
-              Perkenalan singkat mengenai latar belakang, pengalaman, dan bidang
-              yang saya tekuni di dunia teknologi.
+              A brief introduction to my background, experience, and the field I
+              work in within the tech industry.
             </p>
           </div>
 
@@ -109,7 +109,8 @@ function App() {
 
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-300 text-sm font-medium mb-4">
                   <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
-                  Web Development • Data Science
+                  IT Support, Web Development, Data Science & Administrative
+                  Assistant
                 </div>
 
                 <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
@@ -117,8 +118,9 @@ function App() {
                 </h3>
 
                 <p className="text-white/60 leading-7 max-w-sm">
-                  Lulusan S1 Teknologi Informasi yang berfokus pada pengembangan
-                  web, analisis data, dan penguatan pengalaman digital modern.
+                  I am a Bachelor of Science graduate in Information Technology
+                  from Bosowa University, specializing in web development, data
+                  analysis, and enhancing modern digital experiences.
                 </p>
               </div>
 
@@ -126,40 +128,45 @@ function App() {
                 <div className="grid sm:grid-cols-2 gap-4 mb-6">
                   <div className="rounded-2xl border border-cyan-400/10 bg-[#071c2f]/60 p-4">
                     <p className="text-sm text-cyan-300 font-medium mb-1">
-                      Fokus Utama
+                      Main Focus
                     </p>
                     <h4 className="text-white font-semibold">
-                      Web Development & Data Science
+                      IT Support, Web Development & Data Science
                     </h4>
                   </div>
 
                   <div className="rounded-2xl border border-cyan-400/10 bg-[#071c2f]/60 p-4">
                     <p className="text-sm text-cyan-300 font-medium mb-1">
-                      Pengalaman
+                      Experience
                     </p>
                     <h4 className="text-white font-semibold">
-                      MSIB & Magang Kementerian Keuangan
+                      PT Baoshuo Taman Industry Investment Group, Ministry of
+                      Finance & MSIB
                     </h4>
                   </div>
                 </div>
 
                 <p className="text-base md:text-lg leading-8 text-white/75 mb-8">
-                  Hai, perkenalkan saya{" "}
+                  Hello, I'm{" "}
                   <span className="text-cyan-300 font-semibold">
                     Rian Hadiwijaya Anwar
                   </span>
-                  , lulusan S1 Teknologi Informasi Universitas Bosowa yang
-                  tertarik pada Web Development dan Data Science. Saya pernah
-                  mengikuti program{" "}
+                  , a Bachelor of Science in Information Technology graduate
+                  from Bosowa University who is interested in IT Support, Web
+                  Development, and Data Science. I have participated in a
+                  program{" "}
+                  <span className="text-cyan-300 font-medium">
+                    IT Support - PT Baoshuo Taman Industry Investment Group,
+                  </span>{" "}
+                  <span className="text-cyan-300 font-medium">
+                    Ministry of Finance
+                  </span>{" "}
+                  and participate in an independent study{" "}
                   <span className="text-cyan-300 font-medium">
                     MSIB Data Science & AI
-                  </span>{" "}
-                  serta magang di{" "}
-                  <span className="text-cyan-300 font-medium">
-                    Kementerian Keuangan
                   </span>
-                  , yang membuat saya terbiasa dengan analisis data,
-                  pengembangan web, dan kerja tim.
+                  , which helped me become familiar with data analysis, web
+                  development, and teamwork.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-8">
@@ -167,14 +174,14 @@ function App() {
                     <h4 className="text-3xl sm:text-4xl font-bold text-white">
                       2<span className="text-cyan-400">+</span>
                     </h4>
-                    <p className="text-white/60 mt-2">Pengalaman Magang</p>
+                    <p className="text-white/60 mt-2">Internship Experience</p>
                   </div>
 
                   <div className="rounded-2xl border border-cyan-400/10 bg-[#071c2f]/60 p-5 text-center hover:border-cyan-400/20 hover:bg-cyan-400/5 transition-all duration-300">
                     <h4 className="text-3xl sm:text-4xl font-bold text-white">
                       8<span className="text-cyan-400">+</span>
                     </h4>
-                    <p className="text-white/60 mt-2">Bulan Pengalaman</p>
+                    <p className="text-white/60 mt-2">Month of Experience</p>
                   </div>
                 </div>
 
@@ -209,7 +216,7 @@ function App() {
             >
               <p className="text-cyan-300 text-sm font-semibold mb-3">Karier</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-white">
-                Pengalaman
+                Experience
               </h2>
             </div>
 
@@ -221,21 +228,22 @@ function App() {
                     IT Support — PT Baoshuo Taman Industry Invesment Group
                   </h3>
                   <span className="w-fit rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-300">
-                    Des 2025 - Saat Ini
+                    Des 2025 - Present
                   </span>
                 </div>
 
                 <ul className="space-y-3 text-white/65 leading-7 list-disc pl-5">
                   <li>
-                    Instalasi, konfigurasi, dan maintenance hardware & software.
-                  </li>
-                  <li>Pengelolaan dan pendataan aset IT secara terstruktur.</li>
-                  <li>
-                    Troubleshooting jaringan, sistem, dan perangkat kerja.
+                    Installation, configuration, and maintenance of hardware and
+                    software.
                   </li>
                   <li>
-                    Pengembangan website inventory IT untuk monitoring dan
-                    manajemen aset.
+                    Structured management and inventory tracking of IT assets.
+                  </li>
+                  <li>Troubleshooting networks, systems, and devices.</li>
+                  <li>
+                    Development of an IT inventory website for monitoring and
+                    asset management.
                   </li>
                 </ul>
               </div>
@@ -244,7 +252,7 @@ function App() {
                 <div className="absolute left-0 top-0 h-full w-1 bg-cyan-400/70"></div>
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
                   <h3 className="text-lg font-bold text-white">
-                    Asistant Administrasi — Kementerian Keuangan
+                    Administrative Assistant — Ministry of Finance
                   </h3>
                   <span className="w-fit rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
                     Apr 2025 - Jun 2025
@@ -253,16 +261,22 @@ function App() {
 
                 <ul className="space-y-3 text-white/65 leading-7 list-disc pl-5">
                   <li>
-                    Layanan administrasi perpajakan SPT Tahunan, EFIN, NPWP.
+                    Tax administration services for annual tax returns, EFIN,
+                    and NPWP.
                   </li>
                   <li>
-                    Dukungan pengawasan pencatatan STP dan distribusi surat.
+                    Support for monitoring STP recording and the distribution of
+                    letters.
                   </li>
                   <li>
-                    Menjaga akurasi data, keamanan, dan kepatuhan prosedur.
+                    Ensuring data accuracy, security, and procedural compliance.
                   </li>
-                  <li>Mendukung peningkatan efektivitas layanan publik.</li>
-                  <li>Pengelolaan arsip digital dan input data wajib pajak.</li>
+                  <li>
+                    Supporting the improvement of public service effectiveness.
+                  </li>
+                  <li>
+                    Management of digital records and taxpayer data entry.
+                  </li>
                 </ul>
               </div>
 
@@ -270,7 +284,7 @@ function App() {
                 <div className="absolute left-0 top-0 h-full w-1 bg-cyan-400/70"></div>
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
                   <h3 className="text-lg font-bold text-white">
-                    Data Science & AI MSIB — Startup Campus
+                    MSIB Data Science & AI — Startup Campus
                   </h3>
                   <span className="w-fit rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
                     Apr 2024 - Jun 2024
@@ -279,19 +293,17 @@ function App() {
 
                 <ul className="space-y-3 text-white/65 leading-7 list-disc pl-5">
                   <li>
-                    Menguasai SQL, Python, dan statistical thinking untuk
-                    aplikasi bisnis.
+                    Mastering SQL, Python, and statistical thinking for business
+                    applications.
                   </li>
                   <li>
-                    Terampil dalam data preprocessing, feature engineering, dan
+                    Proficient in data preprocessing, feature engineering, and
                     EDA.
                   </li>
+                  <li>Implementing machine learning and data visualization.</li>
                   <li>
-                    Mengimplementasikan machine learning dan data visualization.
-                  </li>
-                  <li>
-                    Memahami konsep Artificial Intelligence dan aplikasinya di
-                    berbagai industri.
+                    Understanding the concept of Artificial Intelligence and its
+                    applications in various industries.
                   </li>
                 </ul>
               </div>
@@ -307,10 +319,10 @@ function App() {
               data-aos-once="true"
             >
               <p className="text-cyan-300 text-sm font-semibold mb-3">
-                Pendidikan
+                Education
               </p>
               <h2 className="text-3xl sm:text-4xl font-bold text-white">
-                Riwayat Pendidikan
+                Education History
               </h2>
             </div>
 
@@ -324,18 +336,17 @@ function App() {
                   </div>
 
                   <h3 className="text-xl font-bold text-white mb-2">
-                    SMA NEGERI 2 SIDRAP
+                    Sidrap State High School No. 2
                   </h3>
 
                   <span className="inline-block rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-300 mb-4">
-                    Matematika Dan Ilmu Pengetahuan Alam
+                    Mathematics and Natural Sciences
                   </span>
 
                   <p className="text-white/65 leading-7">
-                    Menempuh pendidikan tingkat Sekolah Menengah Atas dengan
-                    membangun dasar pengetahuan, kedisiplinan, dan kemampuan
-                    belajar yang menjadi fondasi untuk melanjutkan pendidikan ke
-                    jenjang kuliah.
+                    Pursuing a high school education by building a foundation of
+                    knowledge, discipline, and learning skills that serve as the
+                    basis for continuing on to college.
                   </p>
                 </div>
               </div>
@@ -349,18 +360,18 @@ function App() {
                   </div>
 
                   <h3 className="text-xl font-bold text-white mb-2">
-                    UNIVERSITAS BOSOWA
+                    BOSOWA UNIVERSITY
                   </h3>
 
                   <span className="inline-block rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-300 mb-4">
-                    S1 Teknologi Informasi
+                    Bachelor of Science in Information Technology
                   </span>
 
                   <p className="text-white/65 leading-7">
-                    Menempuh pendidikan S1 Teknologi Informasi dengan fokus pada
-                    pengembangan web, pemrograman, analisis data, serta
-                    pemanfaatan teknologi informasi untuk menyelesaikan
-                    kebutuhan digital.
+                    Pursuing a Bachelor’s degree in Information Technology with
+                    a focus on IT support, web development, programming, data
+                    analysis, and the application of information technology to
+                    address digital needs.
                   </p>
                 </div>
               </div>
@@ -373,10 +384,10 @@ function App() {
       <section id="proyek" className="py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-3">Proyek Saya</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-3">My Projects</h1>
 
             <p className="text-base leading-8 text-white/55">
-              Berikut ini beberapa proyek yang telah saya buat.
+              Here are some projects I’ve created.
             </p>
           </div>
 
@@ -418,7 +429,7 @@ function App() {
                       href="#"
                       className="bg-cyan-500/20 px-4 py-3 rounded-2xl block text-center border border-cyan-400/20 text-white hover:bg-cyan-400/20 hover:shadow-[0_0_25px_rgba(34,211,238,0.2)] transition-all duration-300"
                     >
-                      Lihat Website
+                      Visit the Website
                     </a>
                   </div>
                 </div>
@@ -433,12 +444,12 @@ function App() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="max-w-3xl">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
-              Tools Yang Saya Pakai
+              Tools I Use
             </h2>
 
             <p className="text-base leading-8 text-white/60">
-              Berikut ini beberapa tools yang biasa saya pakai untuk pembuatan
-              website ataupun Data Science.
+              Here are some tools I commonly use for building websites or for
+              data science.
             </p>
           </div>
 
@@ -472,15 +483,13 @@ function App() {
             data-aos-duration="1000"
             data-aos-once="true"
           >
-            <p className="text-cyan-300 text-sm font-semibold mb-3">
-              Kemampuan
-            </p>
+            <p className="text-cyan-300 text-sm font-semibold mb-3">Ability</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
-              Hard Skill & Soft Skill
+              Hard Skills & Soft Skills
             </h2>
             <p className="text-base leading-8 text-white/60">
-              Kumpulan kemampuan teknis dan kemampuan interpersonal yang saya
-              gunakan untuk mendukung pekerjaan, proyek, serta kolaborasi tim.
+              A collection of technical and interpersonal skills that I use to
+              support my work, projects, and team collaboration.
             </p>
           </div>
 
@@ -499,12 +508,12 @@ function App() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-3">
-                  Hard Skill
+                  Hard Skills
                 </h3>
 
                 <p className="text-white/60 leading-7 mb-6">
-                  Kemampuan teknis yang saya kuasai dalam bidang pengembangan
-                  web, data, administrasi, dan pengelolaan informasi.
+                  The technical skills I have mastered in the fields of web
+                  development, data, administration, and information management.
                 </p>
 
                 <div className="flex flex-wrap gap-3">
@@ -535,13 +544,12 @@ function App() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-3">
-                  Soft Skill
+                  Soft Skills
                 </h3>
 
                 <p className="text-white/60 leading-7 mb-6">
-                  Kemampuan interpersonal yang membantu saya bekerja secara
-                  efektif, beradaptasi, dan berkolaborasi dalam lingkungan
-                  kerja.
+                  Interpersonal skills that help me work effectively, adapt, and
+                  collaborate in the workplace.
                 </p>
 
                 <div className="flex flex-wrap gap-3">
@@ -565,13 +573,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <p className="text-cyan-300 text-sm font-semibold mb-3">Kontak</p>
-            <h1 className="text-3xl sm:text-4xl mb-3 font-bold">
-              Hubungi Saya
-            </h1>
+            <h1 className="text-3xl sm:text-4xl mb-3 font-bold">Contact Me</h1>
 
             <p className="text-base leading-8 text-white/55">
-              Silakan hubungi saya melalui WhatsApp, Email, atau lihat lokasi
-              saya.
+              Please contact me via WhatsApp or email, or check my location .
             </p>
           </div>
 
@@ -593,7 +598,7 @@ function App() {
                 <h3 className="text-xl font-bold text-white mb-2">WhatsApp</h3>
 
                 <p className="text-white/60 mb-4">
-                  Hubungi saya langsung melalui WhatsApp.
+                  Contact me directly via WhatsApp.
                 </p>
 
                 <p className="text-cyan-300 font-semibold">+62 852-4060-0870</p>
@@ -615,7 +620,7 @@ function App() {
                 <h3 className="text-xl font-bold text-white mb-2">Email</h3>
 
                 <p className="text-white/60 mb-4">
-                  Kirim pesan atau kerja sama melalui email.
+                  Send a message or contact us via email.
                 </p>
 
                 <p className="text-cyan-300 font-semibold break-all">
@@ -643,7 +648,7 @@ function App() {
                 <p className="text-white/60 mb-4">Lokasi saya saat ini.</p>
 
                 <p className="text-cyan-300 font-semibold">
-                  Morowali, Sulawesi Tengah, Indonesia
+                  Morowali, Central Sulawesi, Indonesia
                 </p>
               </div>
             </a>

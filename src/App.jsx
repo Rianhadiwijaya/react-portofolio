@@ -35,32 +35,25 @@ function App() {
             </p>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">Halo, saya </span>
+              <span className="text-white">Hello, I'am </span>
               <span className="text-cyan-400 drop-shadow-[0_0_18px_rgba(34,211,238,0.75)]">
                 Rian Hadiwijaya Anwar
               </span>
             </h1>
 
             <h2 className="text-1xl sm:text-2xl md:text-3xl font-bold text-white/90 mb-6">
-              IT Support, Web Development, Administrasi
-              <br className="hidden sm:block" /> dan Data Science.
+              IT Support, Web Development, Administration
+              <br className="hidden sm:block" /> and Data Science.
             </h2>
 
             <div className="flex items-center justify-center gap-3 sm:gap-4 flex-wrap">
               <a
-                href="https://drive.google.com/file/d/1qfHob2zSkXq1g5jMfvPDcXDfTZoT5Zpt/view?usp=sharing"
+                href="https://drive.google.com/file/d/1kxWfhdppC6LiUqL84vVe9GNM8XGv7sUL/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-4 rounded-2xl border border-cyan-400/30 bg-cyan-500/20 text-white font-semibold hover:bg-cyan-400/20 hover:shadow-[0_0_30px_rgba(34,211,238,0.35)] transition-all duration-300"
               >
                 Download CV <i className="ri-download-line ri-lg ml-1"></i>
-              </a>
-
-              <a
-                href="#tentang"
-                className="px-6 py-4 rounded-2xl border border-white/10 bg-white/5 text-white font-semibold hover:border-cyan-400/30 hover:text-cyan-300 hover:bg-cyan-400/5 transition-all duration-300"
-              >
-                About Me <i className="ri-arrow-down-line ri-lg ml-1"></i>
               </a>
             </div>
           </div>
@@ -381,25 +374,29 @@ function App() {
       </section>
 
       {/* PROYEK */}
-      <section id="proyek" className="py-20 sm:py-24">
+      <section id="proyek" className="scroll-mt-24 py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-3">My Projects</h1>
+            <p className="text-cyan-300 text-sm font-semibold mb-3">
+              Portfolio Project
+            </p>
+
+            <h1 className="text-3xl sm:text-4xl font-bold mb-3">My Project</h1>
 
             <p className="text-base leading-8 text-white/55">
-              Here are some projects I’ve created.
+              Here are some projects I’ve created and developed.
             </p>
           </div>
 
           <div className="mt-12 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
-            {listProyek.map((proyek) => (
+            {listProyek.slice(0, 4).map((proyek) => (
               <div
                 key={proyek.id}
                 className="h-full flex flex-col p-5 bg-white/3 border border-cyan-400/10 rounded-3xl backdrop-blur-sm hover:border-cyan-400/20 hover:bg-cyan-400/3 hover:shadow-[0_0_25px_rgba(34,211,238,0.08)] transition-all duration-300"
               >
                 <img
                   src={proyek.gambar}
-                  alt="Proyek Image"
+                  alt={proyek.nama}
                   className="rounded-2xl w-full h-52 object-cover border border-cyan-400/10"
                   loading="lazy"
                 />
@@ -426,10 +423,18 @@ function App() {
 
                   <div className="mt-8">
                     <a
-                      href="#"
-                      className="bg-cyan-500/20 px-4 py-3 rounded-2xl block text-center border border-cyan-400/20 text-white hover:bg-cyan-400/20 hover:shadow-[0_0_25px_rgba(34,211,238,0.2)] transition-all duration-300"
+                      href={proyek.link || "#"}
+                      target={proyek.link ? "_blank" : "_self"}
+                      rel={proyek.link ? "noopener noreferrer" : undefined}
+                      className={`bg-cyan-500/20 px-4 py-3 rounded-2xl block text-center border border-cyan-400/20 text-white transition-all duration-300 
+                      ${
+                        proyek.link
+                          ? "hover:bg-cyan-400/20 hover:shadow-[0_0_25px_rgba(34,211,238,0.2)]"
+                          : "opacity-50 cursor-not-allowed"
+                      }`}
                     >
-                      Visit the Website
+                      {proyek.link ? "View Project" : "Coming Soon"}
+                      <i className="ri-external-link-line ri-lg ml-1"></i>
                     </a>
                   </div>
                 </div>

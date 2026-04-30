@@ -6,6 +6,8 @@ const Image = {
 
 export default Image;
 
+/* ================= TOOLS ================= */
+
 import Tools1 from "/assets/tools/vscode.png";
 import Tools2 from "/assets/tools/reactjs.png";
 import Tools3 from "/assets/tools/php.png";
@@ -57,7 +59,7 @@ export const listTools = [
   {
     id: 6,
     gambar: Tools6,
-    nama: "Javascript",
+    nama: "JavaScript",
     ket: "Language",
     dad: "600",
   },
@@ -94,16 +96,16 @@ export const listTools = [
     gambar: Tools11,
     nama: "Google Colab",
     ket: "Code Editor",
-    dad: "100",
+    dad: "1100",
   },
 ];
+
+/* ================= PROYEK ================= */
 
 import Proyek1 from "/assets/proyek/webgudang_.png";
 import Proyek2 from "/assets/proyek/msib_.png";
 import Proyek3 from "/assets/proyek/analisis_.png";
 import Proyek4 from "/assets/proyek/proyek4.webp";
-import Proyek5 from "/assets/proyek/proyek5.webp";
-import Proyek6 from "/assets/proyek/proyek6.webp";
 
 export const listProyek = [
   {
@@ -113,13 +115,14 @@ export const listProyek = [
     desk: "Mengembangkan website inventory gudang untuk pencatatan dan monitoring stok barang masuk serta keluar secara digital.",
     tools: [
       "PHP",
-      "MySql",
+      "MySQL",
       "JavaScript",
       "CSS",
       "HTML",
-      "Boostrap",
+      "Bootstrap",
       "Visual Studio Code",
     ],
+    link: "https://github.com/Rianhadiwijaya/InventoryGudangIT",
     dad: "200",
   },
   {
@@ -127,7 +130,8 @@ export const listProyek = [
     gambar: Proyek2,
     nama: "Data Science & AI",
     desk: "Mengembangkan dashboard dan forecasting penjualan untuk menghasilkan insight bisnis.",
-    tools: ["Python", "Google Colab", "Loker Studio"],
+    tools: ["Python", "Google Colab", "Looker Studio"],
+    link: "https://drive.google.com/file/d/1qntxXuW_PdvCA_xzcY07LAgGif_KdXzR/view?usp=sharing",
     dad: "300",
   },
   {
@@ -136,30 +140,16 @@ export const listProyek = [
     nama: "Analisis Sentimen",
     desk: "Klasifikasi sentimen komentar TikTok terhadap pemain Timnas Indonesia menggunakan metode Naive Bayes.",
     tools: ["Google Colab", "Python", "Apify", "TikTok"],
+    link: "https://colab.research.google.com/drive/1rp4pthASKkkOqe2KRwktKSM7gMCHWGTw?usp=sharing",
     dad: "400",
   },
   {
     id: 4,
     gambar: Proyek4,
-    nama: "Website Course",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
-    dad: "500",
-  },
-  {
-    id: 5,
-    gambar: Proyek5,
     nama: "Web Portfolio",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "Bootsrap"],
-    dad: "600",
-  },
-  {
-    id: 6,
-    gambar: Proyek6,
-    nama: "Company Profile 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["NextJS", "TailwindCSS", "Framermotion"],
-    dad: "700",
+    desk: "Membangun website portfolio pribadi untuk menampilkan profil, pengalaman, skill, tools, dan proyek yang telah dikerjakan.",
+    tools: ["Vite", "React JS", "Tailwind CSS", "HTML", "JavaScript"],
+    link: "https://rianhadiwijaya.github.io/react-portofolio/",
+    dad: "500",
   },
 ];

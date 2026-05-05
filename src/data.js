@@ -105,7 +105,7 @@ export const listTools = [
 import Proyek1 from "/assets/proyek/webgudang_.png";
 import Proyek2 from "/assets/proyek/msib_.png";
 import Proyek3 from "/assets/proyek/analisis_.png";
-import Proyek4 from "/assets/proyek/proyek4.webp";
+import Proyek4 from "/assets/proyek/portofolio.png";
 
 export const listProyek = [
   {

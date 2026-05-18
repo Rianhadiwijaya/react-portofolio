@@ -42,8 +42,8 @@ function App() {
             </h1>
 
             <h2 className="text-1xl sm:text-2xl md:text-3xl font-bold text-white/90 mb-6">
-              IT Support, Web Development, Administration
-              <br className="hidden sm:block" /> and Data Science.
+              Web Development, IT Support, Data Science
+              <br className="hidden sm:block" /> and Administration.
             </h2>
 
             <div className="flex items-center justify-center gap-3 sm:gap-4 flex-wrap">
@@ -102,7 +102,7 @@ function App() {
 
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-300 text-sm font-medium mb-4">
                   <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
-                  IT Support, Web Development, Data Science & Administrative
+                  Web Development, IT Support, Data Science & Administrative
                   Assistant
                 </div>
 
@@ -124,7 +124,7 @@ function App() {
                       Main Focus
                     </p>
                     <h4 className="text-white font-semibold">
-                      IT Support, Web Development & Data Science
+                      Web Development, IT Support & Data Science
                     </h4>
                   </div>
 
@@ -145,9 +145,8 @@ function App() {
                     Rian Hadiwijaya Anwar
                   </span>
                   , a Bachelor of Science in Information Technology graduate
-                  from Bosowa University who is interested in IT Support, Web
-                  Development, and Data Science. I have participated in a
-                  program{" "}
+                  from Bosowa University who is interested in Web Development,
+                  IT Support and Data Science. I have participated in a program{" "}
                   <span className="text-cyan-300 font-medium">
                     IT Support - PT Baoshuo Taman Industry Investment Group,
                   </span>{" "}
@@ -280,7 +279,7 @@ function App() {
                     MSIB Data Science & AI — Startup Campus
                   </h3>
                   <span className="w-fit rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
-                    Apr 2024 - Jun 2024
+                    Feb 2024 - Jun 2024
                   </span>
                 </div>
 

@@ -19,10 +19,7 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#031522] text-white overflow-x-hidden">
-      {/* Background glow */}
-      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(0,255,255,0.10),_transparent_30%),radial-gradient(circle_at_center,_rgba(0,180,255,0.08),_transparent_35%),linear-gradient(to_bottom,_#031522,_#020f1a)]" />
-
+    <div className="min-h-screen bg-[#F7F6F2] text-black overflow-x-hidden">
       {/* HERO */}
       <section
         id="home"
@@ -30,18 +27,18 @@ function App() {
       >
         <div className="max-w-5xl mx-auto w-full px-6 sm:px-8 lg:px-12 text-center">
           <div className="animate__animated animate__fadeInUp animate__delay-1s">
-            <p className="uppercase tracking-[0.25em] text-cyan-300/80 text-sm font-semibold mb-6">
+            <p className="uppercase tracking-[0.25em] text-[#2D5016]/80 text-sm font-semibold mb-6">
               Portfolio
             </p>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">Hello, I'am </span>
-              <span className="text-cyan-400 drop-shadow-[0_0_18px_rgba(34,211,238,0.75)]">
+              <span className="text-black">Hello, I'am </span>
+              <span className="text-[#2D5016]/80 drop-shadow-[0_0_18px_rgba(34,211,238,0.75)]">
                 Rian Hadiwijaya Anwar
               </span>
             </h1>
 
-            <h2 className="text-1xl sm:text-2xl md:text-3xl font-bold text-white/90 mb-6">
+            <h2 className="text-1xl sm:text-2xl md:text-3xl text-black/90 mb-6">
               Web Development, IT Support, Data Science
               <br className="hidden sm:block" /> and Administration.
             </h2>
@@ -51,7 +48,7 @@ function App() {
                 href="https://drive.google.com/file/d/1kxWfhdppC6LiUqL84vVe9GNM8XGv7sUL/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-4 rounded-2xl border border-cyan-400/30 bg-cyan-500/20 text-white font-semibold hover:bg-cyan-400/20 hover:shadow-[0_0_30px_rgba(34,211,238,0.35)] transition-all duration-300"
+                className="px-6 py-4 rounded-2xl borderborder-[#5A8A2A]/30 bg-[#2D5016]/20 text-[#2D5016] hover:bg-[#2D5016]/30 hover:shadow-[0_0_30px_rgba(45,80,22,0.35)] transition-all duration-300"
               >
                 Download CV <i className="ri-download-line ri-lg ml-1"></i>
               </a>
@@ -69,48 +66,48 @@ function App() {
             data-aos-duration="1000"
             data-aos-once="true"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#2D5016] mb-3">
               About Me
             </h2>
-            <p className="text-base leading-8 text-white/60">
+            <p className="text-base leading-8 text-black/60">
               A brief introduction to my background, experience, and the field I
               work in within the tech industry.
             </p>
           </div>
 
           <div
-            className="relative overflow-hidden rounded-4xl border border-cyan-400/10 bg-white/3 backdrop-blur-md shadow-[0_0_30px_rgba(0,0,0,0.2)]"
+            className="relative overflow-hidden rounded-4xl border border-[rgba(26,25,22,0.12)] bg-[#FAFAF7] backdrop-blur-md shadow-[0_10px_30px_rgba(26,25,22,0.08)]"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="200"
             data-aos-once="true"
           >
-            <div className="absolute -top-20 left-10 w-56 h-56 bg-cyan-400/10 blur-[90px] rounded-full pointer-events-none"></div>
-            <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-500/5 blur-[100px] rounded-full pointer-events-none"></div>
+            <div className="absolute -top-20 left-10 w-56 h-56 bg-[#5A8A2A]/15 blur-[90px] rounded-full pointer-events-none"></div>
+            <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#2D5016]/10 blur-[100px] rounded-full pointer-events-none"></div>
 
             <div className="relative grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-8 lg:gap-12 p-6 sm:p-8 md:p-10 lg:p-12">
               <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="relative mb-6">
-                  <div className="absolute inset-0 scale-110 rounded-[28px] bg-cyan-400/10 blur-2xl"></div>
+                  <div className="absolute inset-0 scale-110 rounded-[28px] bg-[#2D5016]/8 blur-2xl"></div>
                   <img
                     src={DataImage.HeroImage}
                     alt="Rian Hadiwijaya Anwar"
-                    className="relative w-55 sm:w-60 md:w-65 rounded-[28px] object-cover border border-cyan-400/20 shadow-[0_0_35px_rgba(34,211,238,0.12)]"
+                    className="relative w-55 sm:w-60 md:w-65 rounded-[28px] object-cover border border-[rgba(26,25,22,0.12)] shadow-[0_12px_35px_rgba(26,25,22,0.08)]"
                     loading="lazy"
                   />
                 </div>
 
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-300 text-sm font-medium mb-4">
-                  <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#2D5016]/20 bg-[#2D5016]/5 text-[#5A8A2A] text-sm font-medium mb-4">
+                  <span className="w-2 h-2 rounded-full bg-[#5A8A2A]"></span>
                   Web Development, IT Support, Data Science & Administrative
                   Assistant
                 </div>
 
-                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+                <h3 className="text-2xl sm:text-3xl text-black mb-2">
                   Rian Hadiwijaya Anwar
                 </h3>
 
-                <p className="text-white/60 leading-7 max-w-sm">
+                <p className="text-black/60 leading-7 max-w-sm">
                   I am a Bachelor of Science graduate in Information Technology
                   from Bosowa University, specializing in web development, data
                   analysis, and enhancing modern digital experiences.
@@ -119,42 +116,42 @@ function App() {
 
               <div className="flex flex-col justify-center">
                 <div className="grid sm:grid-cols-2 gap-4 mb-6">
-                  <div className="rounded-2xl border border-cyan-400/10 bg-[#071c2f]/60 p-4">
-                    <p className="text-sm text-cyan-300 font-medium mb-1">
+                  <div className="rounded-2xl border border-[rgba(26,25,22,0.12)] bg-[#FAFAF7] p-4">
+                    <p className="text-sm text-[#5A8A2A] font-medium mb-1">
                       Main Focus
                     </p>
-                    <h4 className="text-white font-semibold">
+                    <h4 className="text-black">
                       Web Development, IT Support & Data Science
                     </h4>
                   </div>
 
-                  <div className="rounded-2xl border border-cyan-400/10 bg-[#071c2f]/60 p-4">
-                    <p className="text-sm text-cyan-300 font-medium mb-1">
+                  <div className="rounded-2xl border border-[rgba(26,25,22,0.12)] bg-[#FAFAF7] p-4">
+                    <p className="text-sm text-[#5A8A2A] font-medium mb-1">
                       Experience
                     </p>
-                    <h4 className="text-white font-semibold">
+                    <h4 className="text-black">
                       PT Baoshuo Taman Industry Investment Group, Ministry of
                       Finance & MSIB
                     </h4>
                   </div>
                 </div>
 
-                <p className="text-base md:text-lg leading-8 text-white/75 mb-8">
+                <p className="text-base md:text-lg leading-8 text-black/75 mb-8">
                   Hello, I'm{" "}
-                  <span className="text-cyan-300 font-semibold">
+                  <span className="text-[#5A8A2A] font-semibold">
                     Rian Hadiwijaya Anwar
                   </span>
                   , a Bachelor of Science in Information Technology graduate
                   from Bosowa University who is interested in Web Development,
                   IT Support and Data Science. I have participated in a program{" "}
-                  <span className="text-cyan-300 font-medium">
+                  <span className="text-[#5A8A2A] font-medium">
                     IT Support - PT Baoshuo Taman Industry Investment Group,
                   </span>{" "}
-                  <span className="text-cyan-300 font-medium">
+                  <span className="text-[#5A8A2A] font-medium">
                     Ministry of Finance
                   </span>{" "}
                   and participate in an independent study{" "}
-                  <span className="text-cyan-300 font-medium">
+                  <span className="text-[#5A8A2A] font-medium">
                     MSIB Data Science & AI
                   </span>
                   , which helped me become familiar with data analysis, web
@@ -162,18 +159,18 @@ function App() {
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-8">
-                  <div className="rounded-2xl border border-cyan-400/10 bg-[#071c2f]/60 p-5 text-center hover:border-cyan-400/20 hover:bg-cyan-400/5 transition-all duration-300">
-                    <h4 className="text-3xl sm:text-4xl font-bold text-white">
-                      2<span className="text-cyan-400">+</span>
+                  <div className="rounded-2xl border border-[rgba(26,25,22,0.12)] bg-[#FAFAF7] p-5 text-center shadow-[0_8px_24px_rgba(26,25,22,0.06)] hover:border-[#2D5016]/25 hover:shadow-[0_12px_32px_rgba(45,80,22,0.10)] transition-all duration-300">
+                    <h4 className="text-3xl sm:text-4xl font-bold text-black">
+                      2<span className="text-[#5A8A2A]">+</span>
                     </h4>
-                    <p className="text-white/60 mt-2">Internship Experience</p>
+                    <p className="text-black/60 mt-2">Internship Experience</p>
                   </div>
 
-                  <div className="rounded-2xl border border-cyan-400/10 bg-[#071c2f]/60 p-5 text-center hover:border-cyan-400/20 hover:bg-cyan-400/5 transition-all duration-300">
-                    <h4 className="text-3xl sm:text-4xl font-bold text-white">
-                      8<span className="text-cyan-400">+</span>
+                  <div className="rounded-2xl border border-[#2D5016]/10 bg-[#FAFAF7] p-5 text-center hover:border-[#2D5016]/20 hover:bg-[#2D5016]/5 transition-all duration-300">
+                    <h4 className="text-3xl sm:text-4xl font-bold text-black">
+                      8<span className="text-[#5A8A2A]">+</span>
                     </h4>
-                    <p className="text-white/60 mt-2">Month of Experience</p>
+                    <p className="text-black/60 mt-2">Month of Experience</p>
                   </div>
                 </div>
 
@@ -188,7 +185,7 @@ function App() {
                   ].map((skill) => (
                     <span
                       key={skill}
-                      className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm"
+                      className="px-4 py-2 rounded-full border border-[#2D5016]/15 bg-[#2D5016]/5 text-[#5A8A2A] text-sm"
                     >
                       {skill}
                     </span>
@@ -206,25 +203,27 @@ function App() {
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              <p className="text-cyan-300 text-sm font-semibold mb-3">Karier</p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white">
+              <p className="text-[#5A8A2A] text-sm font-semibold mb-3">
+                Karier
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-black">
                 Experience
               </h2>
             </div>
 
             <div className="max-w-4xl mx-auto space-y-5">
-              <div className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]">
-                <div className="absolute left-0 top-0 h-full w-1 bg-cyan-400/70"></div>
+              <div className="relative overflow-hidden rounded-3xl border border-[rgba(26,25,22,0.12)] bg-[#FAFAF7]/90 backdrop-blur-md p-6 sm:p-8 shadow-[0_10px_30px_rgba(26,25,22,0.08)]">
+                <div className="absolute left-0 top-0 h-full w-1 bg-[#5A8A2A]/80"></div>
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
-                  <h3 className="text-lg font-bold text-white">
+                  <h3 className="text-lg font-bold text-black">
                     IT Support — PT Baoshuo Taman Industry Invesment Group
                   </h3>
-                  <span className="w-fit rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-300">
+                  <span className="w-fit rounded-full border border-[#2D5016]/15 bg-[#2D5016]/10 px-4 py-2 text-sm font-semibold text-[#5A8A2A]">
                     Des 2025 - Present
                   </span>
                 </div>
 
-                <ul className="space-y-3 text-white/65 leading-7 list-disc pl-5">
+                <ul className="space-y-3 text-black/65 leading-7 list-disc pl-5">
                   <li>
                     Installation, configuration, and maintenance of hardware and
                     software.
@@ -240,18 +239,18 @@ function App() {
                 </ul>
               </div>
 
-              <div className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]">
-                <div className="absolute left-0 top-0 h-full w-1 bg-cyan-400/70"></div>
+              <div className="relative overflow-hidden rounded-3xl border border-[#2D5016]/10 bg-[#FAFAF7]/90 backdrop-blur-md p-6 sm:p-8 shadow-[0_10px_30px_rgba(45,80,22,0.08)]">
+                <div className="absolute left-0 top-0 h-full w-1 bg-[#5A8A2A]/70"></div>
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
-                  <h3 className="text-lg font-bold text-white">
+                  <h3 className="text-lg font-bold text-black">
                     Administrative Assistant — Ministry of Finance
                   </h3>
-                  <span className="w-fit rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
+                  <span className="w-fit rounded-full border border-[#2D5016]/15 bg-[#2D5016]/10 px-4 py-2 text-sm font-semibold text-[#5A8A2A]">
                     Apr 2025 - Jun 2025
                   </span>
                 </div>
 
-                <ul className="space-y-3 text-white/65 leading-7 list-disc pl-5">
+                <ul className="space-y-3 text-black/65 leading-7 list-disc pl-5">
                   <li>
                     Tax administration services for annual tax returns, EFIN,
                     and NPWP.
@@ -272,18 +271,18 @@ function App() {
                 </ul>
               </div>
 
-              <div className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)]">
-                <div className="absolute left-0 top-0 h-full w-1 bg-cyan-400/70"></div>
+              <div className="relative overflow-hidden rounded-3xl border border-[#2D5016]/10 bg-[#FAFAF7]/95 backdrop-blur-md p-6 sm:p-8 shadow-[0_10px_30px_rgba(45,80,22,0.08)]">
+                <div className="absolute left-0 top-0 h-full w-1 bg-[#5A8A2A]/70"></div>
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
-                  <h3 className="text-lg font-bold text-white">
+                  <h3 className="text-lg font-bold text-black">
                     MSIB Data Science & AI — Startup Campus
                   </h3>
-                  <span className="w-fit rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
+                  <span className="w-fit rounded-full border border-[#2D5016]/15 bg-[#EFEDE7] px-4 py-2 text-sm font-semibold text-[#2D5016]">
                     Feb 2024 - Jun 2024
                   </span>
                 </div>
 
-                <ul className="space-y-3 text-white/65 leading-7 list-disc pl-5">
+                <ul className="space-y-3 text-black/65 leading-7 list-disc pl-5">
                   <li>
                     Mastering SQL, Python, and statistical thinking for business
                     applications.
@@ -310,32 +309,32 @@ function App() {
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              <p className="text-cyan-300 text-sm font-semibold mb-3">
+              <p className="text-[#5A8A2A] text-sm font-semibold mb-3">
                 Education
               </p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white">
+              <h2 className="text-3xl sm:text-4xl font-bold text-black">
                 Education History
               </h2>
             </div>
 
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/20 hover:bg-cyan-400/5 transition-all duration-300">
-                <div className="absolute -top-16 right-0 w-44 h-44 bg-cyan-400/10 blur-[80px] rounded-full"></div>
+              <div className="relative overflow-hidden rounded-3xl border border-[rgba(26,25,22,0.12)] bg-[#FAFAF7] backdrop-blur-md p-6 sm:p-8 shadow-[0_10px_30px_rgba(26,25,22,0.08)] hover:border-[#5A8A2A]/30 hover:bg-[#2D5016]/5 hover:shadow-[0_12px_36px_rgba(45,80,22,0.12)] transition-all duration-300">
+                <div className="absolute -top-16 right-0 w-44 h-44 bg-[#5A8A2A]/10 blur-[80px] rounded-full"></div>
 
                 <div className="relative">
-                  <div className="w-12 h-12 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                  <div className="w-12 h-12 rounded-2xl border border-[#2D5016]/20 bg-[#2D5016]/10 flex items-center justify-center text-[#5A8A2A] mb-5">
                     <i className="ri-school-line ri-xl"></i>
                   </div>
 
-                  <h3 className="text-xl font-bold text-white mb-2">
+                  <h3 className="text-xl font-bold text-black mb-2">
                     Sidrap State High School No. 2
                   </h3>
 
-                  <span className="inline-block rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-300 mb-4">
+                  <span className="inline-block rounded-full border border-[#2D5016]/15 bg-[#EFEDE7] px-4 py-1 text-sm font-semibold text-[#2D5016] mb-4">
                     Mathematics and Natural Sciences
                   </span>
 
-                  <p className="text-white/65 leading-7">
+                  <p className="text-black/65 leading-7">
                     Pursuing a high school education by building a foundation of
                     knowledge, discipline, and learning skills that serve as the
                     basis for continuing on to college.
@@ -343,23 +342,23 @@ function App() {
                 </div>
               </div>
 
-              <div className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/20 hover:bg-cyan-400/5 transition-all duration-300">
-                <div className="absolute -top-16 right-0 w-44 h-44 bg-cyan-400/10 blur-[80px] rounded-full"></div>
+              <div className="relative overflow-hidden rounded-3xl border border-[rgba(26,25,22,0.12)] bg-[#FAFAF7] backdrop-blur-md p-6 sm:p-8 shadow-[0_10px_30px_rgba(26,25,22,0.08)] hover:border-[#5A8A2A]/30 hover:bg-[#2D5016]/5 hover:shadow-[0_12px_36px_rgba(45,80,22,0.12)] transition-all duration-300">
+                <div className="absolute -top-16 right-0 w-44 h-44 bg-[#5A8A2A]/10 blur-[80px] rounded-full"></div>
 
                 <div className="relative">
-                  <div className="w-12 h-12 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                  <div className="w-12 h-12 rounded-2xl border border-[#2D5016]/20 bg-[#2D5016]/10 flex items-center justify-center text-[#5A8A2A] mb-5">
                     <i className="ri-graduation-cap-line ri-xl"></i>
                   </div>
 
-                  <h3 className="text-xl font-bold text-white mb-2">
+                  <h3 className="text-xl font-bold text-black mb-2">
                     BOSOWA UNIVERSITY
                   </h3>
 
-                  <span className="inline-block rounded-full border border-cyan-400/15 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-300 mb-4">
+                  <span className="inline-block rounded-full border border-[#2D5016]/15 bg-[#EFEDE7] px-4 py-1 text-sm font-semibold text-[#2D5016] mb-4">
                     Bachelor of Science in Information Technology
                   </span>
 
-                  <p className="text-white/65 leading-7">
+                  <p className="text-black/65 leading-7">
                     Pursuing a Bachelor’s degree in Information Technology with
                     a focus on IT support, web development, programming, data
                     analysis, and the application of information technology to
@@ -376,13 +375,13 @@ function App() {
       <section id="proyek" className="scroll-mt-24 py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto">
-            <p className="text-cyan-300 text-sm font-semibold mb-3">
+            <p className="text-[#5A8A2A] text-sm font-semibold mb-3">
               Portfolio Project
             </p>
 
             <h1 className="text-3xl sm:text-4xl font-bold mb-3">My Project</h1>
 
-            <p className="text-base leading-8 text-white/55">
+            <p className="text-base leading-8 text-black/55">
               Here are some projects I’ve created and developed.
             </p>
           </div>
@@ -391,7 +390,7 @@ function App() {
             {listProyek.slice(0, 4).map((proyek) => (
               <div
                 key={proyek.id}
-                className="h-full flex flex-col p-5 bg-white/3 border border-cyan-400/10 rounded-3xl backdrop-blur-sm hover:border-cyan-400/20 hover:bg-cyan-400/3 hover:shadow-[0_0_25px_rgba(34,211,238,0.08)] transition-all duration-300"
+                className="h-full flex flex-col p-5 bg-[#FAFAF7]/95 border border-[#2D5016]/10 rounded-3xl backdrop-blur-sm hover:border-[#5A8A2A]/25 hover:bg-[#2D5016]/5 hover:shadow-[0_12px_25px_rgba(45,80,22,0.10)] transition-all duration-300"
               >
                 <img
                   src={proyek.gambar}
@@ -401,18 +400,18 @@ function App() {
                 />
 
                 <div className="flex flex-col flex-1">
-                  <h1 className="text-2xl font-bold my-4 text-white">
+                  <h1 className="text-2xl font-bold my-4 text-black">
                     {proyek.nama}
                   </h1>
 
-                  <p className="text-base leading-7 mb-5 text-white/65 flex-1">
+                  <p className="text-base leading-7 mb-5 text-black/65 flex-1">
                     {proyek.desk}
                   </p>
 
                   <div className="flex flex-wrap gap-2">
                     {proyek.tools.map((tool, index) => (
                       <p
-                        className="py-1.5 px-3 border border-cyan-400/15 bg-cyan-400/5 rounded-full text-sm font-medium text-cyan-200"
+                        className="py-1.5 px-3 border border-[#2D5016]/15 bg-[#EFEDE7] rounded-full text-sm font-medium text-[#2D5016]"
                         key={index}
                       >
                         {tool}
@@ -425,10 +424,10 @@ function App() {
                       href={proyek.link || "#"}
                       target={proyek.link ? "_blank" : "_self"}
                       rel={proyek.link ? "noopener noreferrer" : undefined}
-                      className={`bg-cyan-500/20 px-4 py-3 rounded-2xl block text-center border border-cyan-400/20 text-white transition-all duration-300 
+                      className={`className="bg-[#EFEDE7] px-4 py-3 rounded-2xl block text-center border border-[#2D5016]/15 text-[#1A1916] transition-all duration-300 hover:bg-[#2D5016]/5 hover:border-[#2D5016]/25"
                       ${
                         proyek.link
-                          ? "hover:bg-cyan-400/20 hover:shadow-[0_0_25px_rgba(34,211,238,0.2)]"
+                          ? "hover:bg-[#2D5016]/5 hover:shadow-[0_12px_25px_rgba(45,80,22,0.10)]"
                           : "opacity-50 cursor-not-allowed"
                       }`}
                     >
@@ -447,11 +446,11 @@ function App() {
       <section id="tools" className="py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="max-w-3xl">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-black">
               Tools I Use
             </h2>
 
-            <p className="text-base leading-8 text-white/60">
+            <p className="text-base leading-8 text-black/60">
               Here are some tools I commonly use for building websites or for
               data science.
             </p>
@@ -460,17 +459,17 @@ function App() {
           <div className="mt-12 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
             {listTools.map((tool) => (
               <div
-                className="flex items-center gap-4 p-4 border border-cyan-400/10 rounded-2xl bg-white/3 backdrop-blur-sm hover:bg-cyan-400/5 hover:border-cyan-400/20 hover:shadow-[0_0_25px_rgba(34,211,238,0.08)] transition-all duration-300 group"
+                className="flex items-center gap-4 p-4 border border-[#2D5016]/10 rounded-2xl bg-[#FAFAF7]/95 backdrop-blur-sm hover:bg-[#2D5016]/5 hover:border-[#5A8A2A]/25 hover:shadow-[0_12px_25px_rgba(45,80,22,0.10)] transition-all duration-300 group"
                 key={tool.id}
               >
                 <img
                   src={tool.gambar}
                   alt="Tools Image"
-                  className="w-14 h-14 object-contain bg-[#0b1e2c] p-2 rounded-xl border border-cyan-400/10 group-hover:scale-105 transition-all duration-300"
+                  className="w-14 h-14 object-contain bg-[#EFEDE7] p-2 rounded-xl border border-[#2D5016]/10 group-hover:scale-105 group-hover:border-[#5A8A2A]/25 transition-all duration-300"
                 />
                 <div>
-                  <h4 className="font-bold text-white">{tool.nama}</h4>
-                  <p className="text-white/50">{tool.ket}</p>
+                  <h4 className="font-bold text-black">{tool.nama}</h4>
+                  <p className="text-black/50">{tool.ket}</p>
                 </div>
               </div>
             ))}
@@ -487,11 +486,11 @@ function App() {
             data-aos-duration="1000"
             data-aos-once="true"
           >
-            <p className="text-cyan-300 text-sm font-semibold mb-3">Ability</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
+            <p className="text-[#5A8A2A] text-sm font-semibold mb-3">Ability</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-black mb-3">
               Hard Skills & Soft Skills
             </h2>
-            <p className="text-base leading-8 text-white/60">
+            <p className="text-base leading-8 text-black/60">
               A collection of technical and interpersonal skills that I use to
               support my work, projects, and team collaboration.
             </p>
@@ -499,23 +498,23 @@ function App() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div
-              className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/20 hover:bg-cyan-400/5 transition-all duration-300"
+              className="relative overflow-hidden rounded-3xl border border-[rgba(26,25,22,0.12)] bg-[#FAFAF7] backdrop-blur-md p-6 sm:p-8 shadow-[0_10px_30px_rgba(26,25,22,0.08)] hover:border-[#5A8A2A]/30 hover:bg-[#2D5016]/5 hover:shadow-[0_12px_36px_rgba(45,80,22,0.12)] transition-all duration-300"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              <div className="absolute -top-20 right-0 w-56 h-56 bg-cyan-400/10 blur-[90px] rounded-full pointer-events-none"></div>
+              <div className="absolute -top-20 right-0 w-56 h-56 bg-[#5A8A2A]/10 blur-[90px] rounded-full pointer-events-none"></div>
 
               <div className="relative">
-                <div className="w-14 h-14 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                <div className="w-14 h-14 rounded-2xl border border-[#2D5016]/20 bg-[#EFEDE7] flex items-center justify-center text-[#2D5016] mb-5">
                   <i className="ri-code-s-slash-line ri-2x"></i>
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-3">
+                <h3 className="text-2xl font-bold text-black mb-3">
                   Hard Skills
                 </h3>
 
-                <p className="text-white/60 leading-7 mb-6">
+                <p className="text-black/60 leading-7 mb-6">
                   The technical skills I have mastered in the fields of web
                   development, data, administration, and information management.
                 </p>
@@ -524,7 +523,7 @@ function App() {
                   {hardSkills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm font-medium hover:bg-cyan-400/10 transition-all duration-300"
+                      className="px-4 py-2 rounded-full border border-[#2D5016]/15 bg-[#EFEDE7] text-[#2D5016] text-sm font-medium hover:bg-[#E8E5DC] transition-all duration-300"
                     >
                       {skill}
                     </span>
@@ -534,24 +533,24 @@ function App() {
             </div>
 
             <div
-              className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/20 hover:bg-cyan-400/5 transition-all duration-300"
+              className="relative overflow-hidden rounded-3xl border border-[rgba(26,25,22,0.12)] bg-[#FAFAF7] backdrop-blur-md p-6 sm:p-8 shadow-[0_10px_30px_rgba(26,25,22,0.08)] hover:border-[#5A8A2A]/30 hover:bg-[#2D5016]/5 hover:shadow-[0_12px_36px_rgba(45,80,22,0.12)] transition-all duration-300"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="150"
               data-aos-once="true"
             >
-              <div className="absolute -top-20 right-0 w-56 h-56 bg-cyan-400/10 blur-[90px] rounded-full pointer-events-none"></div>
+              <div className="absolute -top-20 right-0 w-56 h-56 bg-[#5A8A2A]/10 blur-[90px] rounded-full pointer-events-none"></div>
 
               <div className="relative">
-                <div className="w-14 h-14 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                <div className="w-14 h-14 rounded-2xl border border-[#2D5016]/20 bg-[#EFEDE7] flex items-center justify-center text-[#2D5016] mb-5 transition-all duration-300 hover:bg-[#2D5016]/10">
                   <i className="ri-team-line ri-2x"></i>
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-3">
+                <h3 className="text-2xl font-bold text-black mb-3">
                   Soft Skills
                 </h3>
 
-                <p className="text-white/60 leading-7 mb-6">
+                <p className="text-black/60 leading-7 mb-6">
                   Interpersonal skills that help me work effectively, adapt, and
                   collaborate in the workplace.
                 </p>
@@ -560,7 +559,7 @@ function App() {
                   {softSkills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-4 py-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-200 text-sm font-medium hover:bg-cyan-400/10 transition-all duration-300"
+                      className="px-4 py-2 rounded-full border border-[#2D5016]/15 bg-[#EFEDE7] text-[#2D5016] text-sm font-medium hover:bg-[#E8E5DC] transition-all duration-300"
                     >
                       {skill}
                     </span>
@@ -576,10 +575,10 @@ function App() {
       <section id="kontak" className="scroll-mt-24 py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <p className="text-cyan-300 text-sm font-semibold mb-3">Kontak</p>
+            <p className="text-[#5A8A2A] text-sm font-semibold mb-3">Kontak</p>
             <h1 className="text-3xl sm:text-4xl mb-3 font-bold">Contact Me</h1>
 
-            <p className="text-base leading-8 text-white/55">
+            <p className="text-base leading-8 text-black/55">
               Please contact me via WhatsApp or email, or check my location .
             </p>
           </div>
@@ -590,44 +589,46 @@ function App() {
               href="https://wa.me/6285240600870"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 text-center shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/30 hover:bg-cyan-400/5 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-300"
+              className="relative overflow-hidden rounded-3xl border border-[#2D5016]/10 bg-[#FAFAF7] backdrop-blur-md p-6 sm:p-8 text-center shadow-[0_10px_30px_rgba(26,25,22,0.08)] hover:border-[#5A8A2A]/30 hover:bg-[#2D5016]/5 hover:shadow-[0_12px_30px_rgba(45,80,22,0.12)] transition-all duration-300"
             >
-              <div className="absolute -top-16 right-0 w-44 h-44 bg-cyan-400/10 blur-[80px] rounded-full"></div>
+              <div className="absolute -top-16 right-0 w-44 h-44 bg-[#5A8A2A]/10 blur-[80px] rounded-full"></div>
 
               <div className="relative">
-                <div className="w-16 h-16 mx-auto rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                <div className="w-16 h-16 mx-auto rounded-2xl border border-[#2D5016]/20 bg-[#EFEDE7] flex items-center justify-center text-[#2D5016] mb-5">
                   <i className="ri-whatsapp-line ri-2x"></i>
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-2">WhatsApp</h3>
+                <h3 className="text-xl font-bold text-black mb-2">WhatsApp</h3>
 
-                <p className="text-white/60 mb-4">
+                <p className="text-black/60 mb-4">
                   Contact me directly via WhatsApp.
                 </p>
 
-                <p className="text-cyan-300 font-semibold">+62 852-4060-0870</p>
+                <p className="text-[#5A8A2A] font-semibold">
+                  +62 852-4060-0870
+                </p>
               </div>
             </a>
 
             {/* Email */}
             <a
               href="mailto:rianbcc89@gmail.com"
-              className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 text-center shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/30 hover:bg-cyan-400/5 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-300"
+              className="relative overflow-hidden rounded-3xl border border-[#2D5016]/10 bg-[#FAFAF7] backdrop-blur-md p-6 sm:p-8 text-center shadow-[0_10px_30px_rgba(26,25,22,0.08)] hover:border-[#5A8A2A]/30 hover:bg-[#2D5016]/5 hover:shadow-[0_12px_30px_rgba(45,80,22,0.12)] transition-all duration-300"
             >
-              <div className="absolute -top-16 right-0 w-44 h-44 bg-cyan-400/10 blur-[80px] rounded-full"></div>
+              <div className="absolute -top-16 right-0 w-44 h-44 bg-[#5A8A2A]/10 blur-[80px] rounded-full"></div>
 
               <div className="relative">
-                <div className="w-16 h-16 mx-auto rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                <div className="w-16 h-16 mx-auto rounded-2xl border border-[#2D5016]/20 bg-[#EFEDE7] flex items-center justify-center text-[#2D5016] mb-5 transition-all duration-300 hover:bg-[#2D5016]/10 hover:border-[#5A8A2A]/30">
                   <i className="ri-mail-line ri-2x"></i>
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-2">Email</h3>
+                <h3 className="text-xl font-bold text-black mb-2">Email</h3>
 
-                <p className="text-white/60 mb-4">
+                <p className="text-black/60 mb-4">
                   Send a message or contact us via email.
                 </p>
 
-                <p className="text-cyan-300 font-semibold break-all">
+                <p className="text-[#5A8A2A] font-semibold break-all">
                   rianbcc89@gmail.com
                 </p>
               </div>
@@ -638,20 +639,20 @@ function App() {
               href="https://maps.app.goo.gl/z7S6nYo2NWxLVXoW6"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative overflow-hidden rounded-3xl border border-cyan-400/10 bg-white/5 backdrop-blur-md p-6 sm:p-8 text-center shadow-[0_0_30px_rgba(0,0,0,0.18)] hover:border-cyan-400/30 hover:bg-cyan-400/5 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-300"
+              className="relative overflow-hidden rounded-3xl border border-[rgba(26,25,22,0.12)] bg-[#FAFAF7] p-6 sm:p-8 text-center shadow-[0_10px_30px_rgba(26,25,22,0.08)] hover:border-[#2D5016]/25 hover:bg-[#EFEDE7] transition-all duration-300"
             >
-              <div className="absolute -top-16 right-0 w-44 h-44 bg-cyan-400/10 blur-[80px] rounded-full"></div>
+              <div className="absolute -top-16 right-0 w-44 h-44 bg-[#5A8A2A]/10 blur-[80px] rounded-full"></div>
 
               <div className="relative">
-                <div className="w-16 h-16 mx-auto rounded-2xl border border-cyan-400/20 bg-cyan-400/10 flex items-center justify-center text-cyan-300 mb-5">
+                <div className="w-16 h-16 mx-auto rounded-2xl border border-[#2D5016]/20 bg-[#EFEDE7] flex items-center justify-center text-[#2D5016] mb-5 transition-all duration-300 hover:bg-[#2D5016]/10 hover:border-[#5A8A2A]/30">
                   <i className="ri-map-pin-line ri-2x"></i>
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-2">Lokasi</h3>
+                <h3 className="text-xl font-bold text-black mb-2">Lokasi</h3>
 
-                <p className="text-white/60 mb-4">Lokasi saya saat ini.</p>
+                <p className="text-black/60 mb-4">Lokasi saya saat ini.</p>
 
-                <p className="text-cyan-300 font-semibold">
+                <p className="text-[#5A8A2A] font-semibold">
                   Morowali, Central Sulawesi, Indonesia
                 </p>
               </div>

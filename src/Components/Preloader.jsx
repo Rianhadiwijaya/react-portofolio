@@ -16,21 +16,21 @@ const Preloader = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden bg-[#031522]">
       {/* Background glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,255,255,0.10),_transparent_30%),radial-gradient(circle_at_center,_rgba(0,180,255,0.08),_transparent_35%),linear-gradient(to_bottom,_#031522,_#020f1a)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(90,138,42,0.10),_transparent_35%),radial-gradient(circle_at_center,_rgba(45,80,22,0.06),_transparent_40%),linear-gradient(to_bottom,_#F7F6F2,_#FAFAF7)]" />
 
       {/* Blur light */}
-      <div className="absolute w-75 h-75 rounded-full bg-cyan-400/10 blur-3xl animate-pulse" />
+      <div className="absolute w-75 h-75 rounded-full bg-[#5A8A2A]/10 blur-3xl animate-pulse" />
 
       {/* Content */}
       <div className="relative flex flex-col items-center justify-center">
         {/* Spinner outer glow */}
         <div className="relative flex items-center justify-center">
-          <div className="absolute w-28 h-28 rounded-full bg-cyan-400/10 blur-2xl animate-pulse" />
+          <div className="absolute w-28 h-28 rounded-full bg-[#5A8A2A]/10 blur-2xl animate-pulse" />
 
-          <div className="w-24 h-24 rounded-full border border-cyan-400/20 flex items-center justify-center backdrop-blur-sm bg-white/2 shadow-[0_0_30px_rgba(34,211,238,0.15)]">
+          <div className="w-24 h-24 rounded-full border border-[#2D5016]/20 flex items-center justify-center bg-[#EFEDE7] shadow-[0_10px_30px_rgba(45,80,22,0.08)]">
             <svg
               aria-hidden="true"
-              className="w-12 h-12 animate-spin text-cyan-200/20 fill-cyan-400"
+              className="w-12 h-12 animate-spin text-[#5A8A2A]/20 fill-[#2D5016]"
               viewBox="0 0 100 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -49,14 +49,14 @@ const Preloader = () => {
 
         {/* Text */}
         <div className="mt-8 text-center">
-          <h1 className="text-2xl md:text-3xl font-bold tracking-wide text-white">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-wide text-black">
             Memuat
-            <span className="ml-2 text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.9)]">
+            <span className="ml-2 text-[#5A8A2A] drop-shadow-[0_0_12px_rgba(90,138,42,0.6)]">
               Portofolio
             </span>
           </h1>
 
-          <p className="mt-3 text-sm md:text-base text-white/60">
+          <p className="mt-3 text-sm md:text-base text-black/60">
             Tunggu sebentar, halaman sedang disiapkan...
           </p>
         </div>

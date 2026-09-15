@@ -45,7 +45,7 @@ function App() {
 
             <div className="flex items-center justify-center gap-3 sm:gap-4 flex-wrap">
               <a
-                href="https://drive.google.com/file/d/1kxWfhdppC6LiUqL84vVe9GNM8XGv7sUL/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Oc1pb-7Xhj7tGVKCSUvq0p3-arc-xdgs/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-4 rounded-2xl borderborder-[#5A8A2A]/30 bg-[#2D5016]/20 text-[#2D5016] hover:bg-[#2D5016]/30 hover:shadow-[0_0_30px_rgba(45,80,22,0.35)] transition-all duration-300"
@@ -636,7 +636,7 @@ function App() {
 
             {/* Lokasi */}
             <a
-              href="https://maps.app.goo.gl/z7S6nYo2NWxLVXoW6"
+              href="https://www.google.com/maps/place/Jl.+Sukaria+Raya+No.48,+Tamamaung,+Kec.+Panakkukang,+Kota+Makassar,+Sulawesi+Selatan+90231/@-5.1444806,119.441583,17z/data=!3m1!4b1!4m6!3m5!1s0x2dbee2cbb4e6b493:0x321fd4d5dd8aba8e!8m2!3d-5.1444859!4d119.4441579!16s%2Fg%2F11sn7nrd5s?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="relative overflow-hidden rounded-3xl border border-[rgba(26,25,22,0.12)] bg-[#FAFAF7] p-6 sm:p-8 text-center shadow-[0_10px_30px_rgba(26,25,22,0.08)] hover:border-[#2D5016]/25 hover:bg-[#EFEDE7] transition-all duration-300"
@@ -653,7 +653,7 @@ function App() {
                 <p className="text-black/60 mb-4">Lokasi saya saat ini.</p>
 
                 <p className="text-[#5A8A2A] font-semibold">
-                  Morowali, Central Sulawesi, Indonesia
+                  Makassar, South Sulawesi, Indonesia
                 </p>
               </div>
             </a>
